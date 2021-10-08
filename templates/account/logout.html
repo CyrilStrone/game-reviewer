@@ -1,0 +1,18 @@
+{% extends 'games/games_base.html' %}
+{% load i18n %}
+{% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block content %}
+<div class="regwhite">
+    <h1 class="vhodreal1">Выход</h1>
+    <p class="vhodreal3">Вы уверены, что хотите выйти?</p>
+    <form method="post" action="{% url 'account_logout' %}">
+        {% csrf_token %}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <div class="buttonreg">
+            <button class="primaryAction3" type="submit">{% trans 'Sign Out' %}</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

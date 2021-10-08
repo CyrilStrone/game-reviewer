@@ -1,0 +1,66 @@
+{% extends 'games/games_base.html'%}
+{% load static %}
+{% block title %} {{ genre.name }} {% endblock title%}
+{% block container %}
+<div class="container py-md-3">
+    {% endblock container %}
+    {% block sidebar %}
+    <div class="side-bar col-lg-4">
+        {% endblock sidebar %}
+        {% block game %}
+        <div class="left-ads-display col-lg-8">
+            <div class="row">
+                <div class="desc1-right col-md-6 pl-lg-4">
+                    <h2 class="editContent" style="outline: none; cursor: inherit;">
+                        {{ genre.name }}
+                        </h3>
+                        <h6 class="editContent">
+                            <div class="row sub-para-w3layouts mt-5">
+                                <h3 class="shop-sing editContent" style="outline: none; cursor: inherit;">
+                                    О жанре {{ genre.name }}
+                                </h3>
+                            </div>
+                        </h6>
+                </div>
+                <div class="clearfix"></div>
+                <p>
+                    {{ genre.description}}
+                </p>
+            </div>
+            {% for game in game_list %}
+            <div class="col-md-4 product-men">
+                <div class="product-shoe-info editContent text-center mt-lg-4">
+                    <div class="men-thumb-item">
+                        <a href="{{ game.get_absolute_url }}">
+                            <img src="{{ game.poster.url}}" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="item-info-product">
+                        <h4 class="">
+                            <a href="{{ game.get_absolute_url }}" class="editContent">
+                                {{ game.title }}
+                            </a>
+                        </h4>
+                        <div class="product_price">
+                            <div class="grid-price">
+                                <span class="money editContent">
+                                    {% for genre in game.genre.all %}
+                                    {{ genre.name }}
+                                    {% endfor %}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <hr>
+    <script type="text/javascript">
+    function addReview(name, id) {
+        document.getElementById('contactparent').value = id;
+        document.getElementById('contactcomment').innerText = `${name}, `
+    }
+    </script>
+    {% endblock game%}

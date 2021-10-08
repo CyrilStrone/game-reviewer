@@ -1,0 +1,42 @@
+{% extends 'games/games_base.html' %}
+{% load account %}
+{% block head_title %}Sign In{% endblock %}
+{% block content %}
+<div class="regwhite">
+    <h1 class="vhodreal1"> Вход в </h1>
+    <h1 class="vhodreal2"> GameReviewer </h1>
+    {% if socialaccount_providers %}
+    <p>Please sign in with one
+        of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+        for a {{ site_name }} account and sign in below:</p>
+    <div class="socialaccount_ballot">
+        <ul class="socialaccount_providers">
+            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+        </ul>
+        <div class="login-or">or</div>
+    </div>
+    {% include "socialaccount/snippets/login_extra.html" %}
+    {% else %}
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+        <div class="buttonreg">
+            {% csrf_token %}
+            <div class="knopkanorm">
+                <p>
+                    <label for="id_login"></label> <input class="knopkanorm" type="text" name="login" placeholder="Имя пользователя" autocomplete="username" maxlength="326" required="" id="id_login">
+                </p>
+                <p>
+                    <label for="id_password"></label> <input class="knopkanorm" type="password" name="password" placeholder="Пароль" autocomplete="current-password" maxlength="326" required="" id="id_password">
+                </p>
+            </div>
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <a class="nezabil" href="{% url 'account_reset_password' %}">Забыли пароль?(</a>
+            <p><button class="primaryAction" type="submit">Вход</button></p>
+            <p class="zabil"> 
+                <a href="{{ signup_url }}">У вас нет аккаунтa?! Зарегестрируйтесь!</a> </p>
+            {% endif %}
+        </div>
+    </form>
+</div>
+{% endblock %}

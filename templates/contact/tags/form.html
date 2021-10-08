@@ -1,0 +1,10 @@
+<h3 class="footer-title text-uppercase editContent mb-lg-4 mb-3">
+	<div class="Passilkya">Новостная рассылка
+	</div>
+</h3>
+<p class="Opisanie">Отправь нам свою почту и мы будем присылать тебе свежие скидки и предложения!</p>
+<form action="{% url 'contact'%}" method="post" class="w3layouts-newsletter" type="email">
+    {% csrf_token %}
+    {{ contact_form }}
+    <button class="btn1 btn"><span class="fa fa-paper-plane-o" aria-hidden="true"></span></button>
+</form>

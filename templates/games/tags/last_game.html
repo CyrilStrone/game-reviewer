@@ -1,0 +1,18 @@
+<div class="deal-leftmk left-side">
+    <h3 class="poslednie editContent">Последние добавленные</h3>
+    {% for game in last_games %}
+    <div class="special-sec1 row mt-3 editContent">
+        <div class="img-deals col-md-4">
+            <a href="{{ game.get_absolute_url }}" class="img-fluid2"  
+            >
+                <h3 class="img-fluid2"><img src="{{game.poster.url}}" class="img-fluid2" alt="" style="position: relative;max-width: 90px;height: 120px;">
+            </a>
+        </div>
+        <div class="img-deal1 col-md-4">
+            <a href="{{ game.get_absolute_url }}" class="img-deal1">
+                <h3 class="img-deal1">{{ game.title }}</h3>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

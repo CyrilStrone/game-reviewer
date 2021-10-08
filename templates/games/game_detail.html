@@ -1,0 +1,188 @@
+{% extends 'games/games_base.html'%}
+{% load static %}
+{% block title %} GR | {{ game.title }} {% endblock title%}
+{% block container %}
+<div class="container py-md-3">
+    {% endblock container %}
+    {% block sidebar %}
+    <div class="side-bar col-lg-4">
+        {% endblock sidebar %}
+        {% block game %}
+        <div class="left-ads-display col-lg-8">
+            <div class="row">
+                <div class="desc1-left col-md-6">
+                    <img src="{{ game.poster.url }}" class="img-fluid" alt="">
+                </div>
+                <div class="desc1-right col-md-6 pl-lg-4">
+                    <h3 class="OdnaName" style="outline: none; cursor: inherit;">
+                        {{ game.title }}
+                    </h3>
+                    <h5 class="editContent"></h5>
+                    <ul>
+                        <li style="list-style: none;">
+                            <span><b>Год:</b> {{ game.date }}</span></li>
+                        <li style="list-style: none;font-weight: bold;">
+                            <span><b>Разработчик:</b>
+                                {% for developer in game.developer.all %}
+                                <a href="{{ developer.get_absolute_url }}">
+                                    {{ developer.name }}
+                                </a>;
+                                {% endfor %}</span>
+                        </li>
+                        <li style="list-style: none;">
+                            <span><b>Издатель:</b>
+                                {% for publisher in game.publisher.all %}
+                                <a href="{{ publisher.get_absolute_url }}">
+                                    {{ publisher.name }}
+                                    <a />
+                                    ;
+                                    {% endfor %}
+                            </span>
+                        </li>
+                        <li style="list-style: none;">
+                            <span><b>Возрастной рейтинг:</b>
+                                {% for category in game.category.all %}
+                                {{ category.name }}
+                                {% endfor %}
+                            </span>
+                        </li>
+                        <li style="list-style: none;"><span><b>Жанр:</b>
+                                {% for genre in game.genre.all %}
+                                {{ genre.name }}
+                                {% endfor %}
+                            </span>
+                        </li>
+                        <li style="list-style: none;margin-top: 20px">
+                            
+                            <form action="{% url 'add_rating' %}" method="post" name="rating">
+                                <b>Рейтинг:</b>
+                                {% csrf_token %}
+                                <input type="hidden" value="{{ game.id }}" name="game">
+                                <input type="hidden" value="{{ user.username }}" name="username">
+                                <span class="rating">
+                                    {% for k, v in star_form.fields.star.choices %}
+                                    <input id="rating{{ v }}" type="radio" name="star" value="{{ k }}">
+                                    <label for="rating{{ v }}">{{ k }}</label>
+                                    {% endfor %}
+                                </span>
+                                <br>
+                                
+                            </form>
+                            
+                        </li>
+                        <div class="share-desc" style="list-style: none;margin-left: -50px">
+                            <div class="share">
+                                <ul class="w3layouts_social_list list-unstyled">
+                                    <li>
+                                        <a href="#" class="w3pvt_facebook editContent" style="outline: none; cursor: inherit;">
+                                            <span class="fa fa-facebook-f" style="outline: none; cursor: inherit;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="w3pvt_twitter editContent" style="outline: none; cursor: inherit;">
+                                            <span class="fa fa-twitter" style="outline: none; cursor: inherit;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="w3pvt_vk editContent">
+                                            <span class="fa fa-vk"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                </div>
+            </div>
+            <div class="row sub-para-w3layouts mt-5">
+                <h3 ><a class="shop-sing" >
+                    О игре {{ game.title }}</a>
+                </h3>
+                <p>
+                    <br>
+                    {% for image in game.gameshots_set.all %}
+                    <img src="{{ image.image.url }}" class="img-game-shots" alt="{{ image.description }}">
+                    {% endfor %}
+                </p>
+                <p ><a class="shop-sing-opis" >
+                    {{ game.description|safe}}</a>
+                </p>
+            </div>
+            <hr>
+            <div class="row">
+                <!-- contact form grid -->
+                <div class="single-form-left">
+                    <!-- contact form grid -->
+                    <div class="contact-single">
+                        <h3 class="editContent" style="outline: none; cursor: inherit;margin-top: 50px">
+                            <span style="outline: none; cursor: inherit;">
+                                <h6>Количество комментариев: {{ game.reviews_set.count }}</h6>
+                            </span><br>Оставить
+                            отзыв</h3>
+                        <form action="{% url 'add_review' game.id %}" method="post" class="mt-4" id="formReview">
+                            {% csrf_token %}
+                            <input type="hidden" name="parent" id="contactparent" value="">
+                            <div class="form-group editContent">
+                                <label for="contactcomment" class="editContent">
+                                    Ваш комментарий 
+                                </label>
+                                <textarea class="form-control border" rows="5" name="text" id="contactcomment" required=""></textarea>
+                            </div>
+                            <div class="d-sm-flex">
+                                <div class="col-sm-6 form-group p-0 editContent">
+                                    <label for="contactusername" class="editContent">
+                                        Имя 
+                                    </label>
+                                    <input type="text" class="form-control border" name="name" id="contactusername" required="">
+                                </div>
+                                <div class="col-sm-6 form-group ml-sm-3 editContent">
+                                    <label for="contactemail" class="editContent">
+                                        Email 
+                                    </label>
+                                    <input type="email" class="form-control border" name="email" id="contactemail" required="">
+                                </div>
+                            </div>
+                            <button type="submit" class="mt-3 btn btn-success btn-block py-3"style="background: #5C407A;border: 1px solid #5C407A;">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                    <!--  //contact form grid ends here -->
+                </div>
+            </div>
+            <!--  //contact form grid ends here -->
+            {% for review in game.get_review %}
+            <div class="media py-5">
+                <img src="{% static 'images/te3.jpg'%}" class="ava" alt="image">
+                <div class="media-body mt-4">
+                    <h5 class="mt-0 editContent">
+                        {{ review.name }}
+                    </h5>
+                    <p class="mt-2 editContent">
+                        {{ review.text }}
+                    </p>
+                    <a href="#formReview" onclick="addReview('{{ review.name }}', '{{ review.id }}')">Ответить</a>
+                    <br>
+                    {% for rew in review.reviews_set.all%}
+                    <div class="media mt-5 editContent" style="outline: none; cursor: inherit;">
+                        <a class="pr-3" href="#">
+                            <img src="{% static 'images/te2.jpg'%}" class="img-avatar" alt="image" style="outline: none; cursor: inherit;">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0 editContent" style="outline: none; cursor: inherit;">{{rew.name}}</h5>
+                            <p class="mt-2 editContent" style="outline: none; cursor: inherit;">{{rew.text}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script type="text/javascript">
+    function addReview(name, id) {
+        document.getElementById('contactparent').value = id;
+        document.getElementById('contactcomment').innerText = `${name}, `
+    }
+    </script>
+    {% endblock game%}
