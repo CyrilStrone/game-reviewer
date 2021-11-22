@@ -1,0 +1,66 @@
+{% load game_tag %}
+<!-- header -->
+<header class="header">
+    <div class="container-fluid px-lg-5">
+        <!-- nav -->
+        <nav class="py-4">
+            
+            <div id="logo">
+                <h1> <a href="/" class="editContent"></a></h1>
+                
+            </div>
+            
+               
+            
+            <label for="drop" class="toggle"></label>
+            <input type="checkbox" id="drop">
+            
+            <ul class="menu mt-2">
+                <li
+                     class="search-bar-w3layouts-newsletter">
+                        <form action="{% url 'search' %}" method="get" class="d-flex_editContent">
+                            <input type="search" placeholder="Введите название..." name="q" class="form-control" required="">
+                            
+                        
+                    
+                </li>
+                <li>
+                <button  class="btn1_btn"></button>
+                </form>
+                </li>
+                <li class="active">
+                    <a href="/">ГЛАВНАЯ</a>
+                </li>
+
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <input type="checkbox" id="drop-2">
+                    <ul>
+                        {% for genre in view.get_genres %}
+                        <li><a href="{% url 'genre_view' genre.url%}" align="center">{{ genre.name }}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li>
+                    {% if user.is_authenticated %}
+                    <span class="username">
+                        <a href="{% url 'account_logout' %}" style="color: rgba(92, 64, 122, 1)
+                                " ;> {{ user.username}}</a></span>
+                    {% else %}
+                    <a href="{% url 'account_login' %}" class="vhod-button">ВХОД
+                    </a>
+                    {% endif%}
+                </li>
+                <a class="active">
+                </a>
+            </ul>
+        </nav>
+        <!-- //nav -->
+    </div>
+</header>
+<!-- //header -->
+<!--/banner-->
+<!--// banner-inner -->
+

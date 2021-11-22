@@ -160,17 +160,9 @@ sup {
   top: -.5em;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
 
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
+
+
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -606,13 +598,7 @@ pre code {
   }
 }
 
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 
 .row {
   display: -webkit-box;
@@ -1975,19 +1961,7 @@ pre code {
   border: 0;
 }
 
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+
 
 .form-control::-ms-expand {
   background-color: transparent;
@@ -7670,20 +7644,14 @@ button.bg-dark:focus {
   padding: 1.5rem !important;
 }
 
-.pt-4,
-.py-4 {
-  padding-top: 1.5rem !important;
-}
+
 
 .pr-4,
 .px-4 {
   padding-right: 1.5rem !important;
 }
 
-.pb-4,
-.py-4 {
-  padding-bottom: 1.5rem !important;
-}
+
 
 .pl-4,
 .px-4 {
