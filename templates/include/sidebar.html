@@ -1,9 +1,9 @@
 {% load game_tag %}
 
 
-<form action="{% url 'filter' %}" method="get" name="filter">
+<form action="{% url 'filter' %}" method="get" name="filter" class="bar-home">
     
-    <div class="left-side my-4">
+    <div class="left-side ganre_list">
         <h3 class="sear-head editContent">Жанры</h3>
         <ul class="w3layouts-box-list">
             {% for genre in view.get_genres %}
@@ -37,4 +37,5 @@
     <button class="poisksleva"
         type="submit">Найти</button>
 </form>
-{% get_last_games count=3 %}
+ <!-- {% get_last_games count=3 %} -->
+

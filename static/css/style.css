@@ -82,7 +82,7 @@
 
 	top:40px;
 	right: 100px;
-
+	
 	height: 30px;
 	
 
@@ -150,8 +150,97 @@
     color: #FFFFFF;
 
 }
-/*--Конец Стиль хэдера --*/
+.side-bar
+{
+	display: block;
+}
+/*Здесь квадрат вокруг игры*/
+.games_page_gr
+{
+	width: 1255px;
+	height: 100%;
 
+	position: static;
+
+	background: #DCDCDC;
+	border-radius: 15px;
+
+	margin-top: 20px;
+	padding-bottom:37.5px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.product_price
+{
+	padding-bottom: 10px;
+}
+/*Здесь ксами игры в квадрате*/
+.product-men
+{
+	-webkit-box-flex: 0;
+    
+    display: inline-block;
+
+    margin-left: 37.5px;
+    margin-top:37.5px;
+    
+    width: 202.5px;
+    height: 100%;
+
+    background: #F4F2F2;
+    border-radius: 15px;
+}
+/*Здесь картинка игры*/
+.img-fluid {
+	margin-top: 14.25px;
+    width: 175.5px;
+	height: 226.5px;
+	margin-left: 14.25px;
+
+	border-radius: 6px;
+}
+/*--Конец Стиль хэдера --*/
+/*--Здесь стиль поиска по жанром и тд --*/
+.side-bar 
+{
+		width: 1255px;
+height: 232px;
+
+background: #DCDCDC;
+border-radius: 15px;
+
+
+margin-top: 20px;
+
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left-side
+{
+	width: 173px;
+height: 50px;
+border-radius: 10px;
+background: #5C407A;
+	margin-top: 30px;
+	margin-left: 30px;
+	position: static;
+	display: inline-block;
+	vertical-align: text-top;
+
+
+
+}
+.ganre_list ul
+{
+	list-style-type: none;
+}
+.ganre_list li
+{
+	list-style-type: none;
+}
 /*--Конец нормального стиля --*/
 html,
 body {
@@ -189,21 +278,30 @@ h1 {
 h2 {
     font-family: Roboto;
 }
-
+/*--Здесь стиль жанра года сверху --*/
 h3 {
+    margin-top: 13px;
     font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
 }
 /*--Здесь стиль названий игр под играми --*/
 h4 {
     font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 18px;
+font-size: 14px;
 line-height: 21px;
-/* identical to box height */
 
 
-margin-top:15px;
+margin-left: 15px;
+margin-top:10px;
 align-items: center;
 
 color: #333333;
@@ -215,32 +313,35 @@ color: #333333;
 	font-family: Roboto;
 font-style: normal;
 font-weight: 300;
-font-size: 18px;
+font-size: 14px;
 line-height: 21px;
+margin-left: 15px;
 /* identical to box height */
 
 
 
 color: #727272;
 
-margin-top:15px;
+margin-top:1px;
 align-items: center;
 }
 /*--Здесь стиль звезд в главном экране под играми --*/
 .stars li
 {
-	color: #5C407A;
+	color: #333333;
 	display: inline-block;
 }
 .fa
 {
-	color: #5C407A;
+	color: #333333;
 }
 .stars
 {
-	margin-top:-24px;
+	width:85px;
+	margin-top:-32px;
 	float: right; 
-	margin-right: 9px;
+	margin-right: 14px;
+	font-size: 0.9rem;
 }
 h5 {
     font-family: Roboto;
@@ -310,11 +411,7 @@ nav {
 
 }
 
-.editContent {
-   outline: none;
-   text-decoration:none; 
-   color: inherit;
-}
+
 
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
@@ -375,7 +472,8 @@ nav .menu li a:hover {
 
 
 .row {
-
+margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -546,43 +644,42 @@ nav .btn1_btn {
 /* Жанры */
 
 
-.w3layouts-box-list {}
 
-.sear-head {}
+
 
 /* Игры на главной */
 
-.img-fluid {
-    width: 234px;
-	height: 302px;
 
-
-	border-radius: 6px;
-}
 
 /* Жанры год найти */
 .sear-head {
-    color: #333333;
-    position: relative;
-    top: -8px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
 
+    
 }
 
 .poisksleva {
 
-    color: #333333;
-
-    background: #fff;
-    position: relative;
+    position: absolute;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 646px;
     border: none;
-    outline: 0 !important;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 28px;
+    width: 173px;
+height: 50px;
+
+background: #FFFFFF;
+border-radius: 10px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+align-items: center;
+text-align: center;
+
+color: #5C407A;
 
 }
 
