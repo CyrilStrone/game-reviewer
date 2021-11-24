@@ -3,20 +3,22 @@
 <header class="header">
     <div class="container-fluid px-lg-5">
         <nav class="py-4">
-            <div>
-                <a href="/" class="logo_header" id="logo"></a>
-            </div>
             
             
             
             <div class="button-header">
+                <div class="logo_header">
+                <a href="/" id="logo"></a>
+                </div>
+            
                 <div class="search-bar-w3layouts-newsletter">
                         <form action="{% url 'search' %}" method="get" class="d-flex_editContent">
                             <input type="search" placeholder="   поиск..." name="q" class="form-control" required="">
-                 </div>
-                <div class="home_page">
-                    <a href="/">ГЛАВНАЯ</a>
                 </div>
+                <div class="button-header-next">
+                    <div class="home_page">
+                    <a href="/">ГЛАВНАЯ</a>
+                    </div>
                 
                     {% if user.is_authenticated %}
                     <span class="username">
@@ -25,7 +27,9 @@
                     {% else %}
                     <a href="{% url 'account_login' %}" class="vhod-button">ВХОД
                     </a>
-                    {% endif%}
+                    {% endif%}     
+                </div>
+                
                 
             </div>
         </nav>

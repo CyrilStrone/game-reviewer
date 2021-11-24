@@ -23,7 +23,7 @@ class GamesView(GenreYear, ListView):
 	queryset = Game.objects.filter(draft=False)
 	template_name = "game/games.html"
 
-	paginate_by = 6
+	paginate_by = 15
 
 
 

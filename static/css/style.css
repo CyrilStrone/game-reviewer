@@ -16,13 +16,19 @@
     
     
     display: inline-block;
-
+    margin-left: 40px;
     width: 100px;
     height: 100px;
 
     background-size: cover;
 
-    left: 200px;
+}
+.logo_header
+{
+display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
     top: 5px;
 }
 .logo_header:hover, :focus 
@@ -33,10 +39,10 @@
 /*--Стиль поиска хэдера --*/
 .search-bar-w3layouts-newsletter
 {
-    display: inline-block;
-    float: left;
-    margin-top: -5px;
-    margin-right: 125px;
+	position: absolute;
+	display: inline-block;
+	margin-top: 38px;
+    margin-left: 316px;
 
     transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
@@ -75,18 +81,29 @@
 }
 
 /*--Стиль элементов хэдера кроме лого и поиска--*/
+.container-fluid
+{
+
+}
 .button-header
 {
-    display: inline-block;
-	position: absolute;
+	position: static;
+	width: 1255px;
+	height: 110px;
+	
+	
 
-	top:40px;
-	right: 100px;
-	
-	height: 30px;
-	
+	margin-left: auto;
+	margin-right: auto;
 
    
+}
+.button-header-next
+{
+	position: absolute;
+	display: inline-block;
+	margin-left: 825px;
+	margin-top: 40px;
 }
 .home_page a
 {
@@ -150,10 +167,7 @@
     color: #FFFFFF;
 
 }
-.side-bar
-{
-	display: block;
-}
+
 /*Здесь квадрат вокруг игры*/
 .games_page_gr
 {
@@ -202,14 +216,13 @@
 }
 /*--Конец Стиль хэдера --*/
 /*--Здесь стиль поиска по жанром и тд --*/
-.side-bar 
+#side-bar-script
 {
 		width: 1255px;
-height: 232px;
 
 background: #DCDCDC;
 border-radius: 15px;
-
+padding-bottom: 30px;
 
 margin-top: 20px;
 
@@ -217,6 +230,7 @@ margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 
 .left-side
 {
@@ -233,13 +247,84 @@ background: #5C407A;
 
 
 }
+.left-side:hover
+{
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+/*--Тут стиль жарна сверху стиля --*/
 .ganre_list ul
 {
 	list-style-type: none;
+	
+	
 }
-.ganre_list li
+.w3layouts-box-list span
 {
+
 	list-style-type: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 23px;
+align-items: center;
+
+color: #828282;
+margin-top: 30px;
+
+
+}
+
+.w3layouts-box-list 
+{
+	display:block;
+	margin-left: -30px;
+	margin-top: 20px;
+width: 1195px;
+height: 107px;
+}
+.checkbox_list_ganre 
+{
+	display: inline-block;
+margin-top: 5px;
+margin-left: 30px;
+width: 173px;
+}
+/*--Конец нстиля жанр --*/
+/*--Начало стиля год --*/
+.w3layoutstwo-box-list
+{
+	display:block;
+	margin-left: -237px;
+	margin-top: 20px;
+width: 1195px;
+height: 107px;
+}
+.checkbox_list_year
+{
+
+	display: inline-block;
+margin-top: 5px;
+margin-left: 30px;
+width: 173px;
+}
+.w3layoutstwo-box-list span
+{
+
+	list-style-type: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 23px;
+align-items: center;
+
+color: #828282;
+margin-top: 30px;
+
+
 }
 /*--Конец нормального стиля --*/
 html,
@@ -280,6 +365,7 @@ h2 {
 }
 /*--Здесь стиль жанра года сверху --*/
 h3 {
+
     margin-top: 13px;
     font-family: Roboto;
 font-style: normal;
@@ -290,6 +376,12 @@ align-items: center;
 text-align: center;
 
 color: #FFFFFF;
+
+
+-moz-user-select: -moz-none;
+-o-user-select: none;
+-webkit-user-select: none;
+user-select: none;
 }
 /*--Здесь стиль названий игр под играми --*/
 h4 {
@@ -686,6 +778,7 @@ color: #5C407A;
 .poisksleva:hover {
 
     outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 

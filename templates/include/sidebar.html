@@ -1,18 +1,24 @@
 {% load game_tag %}
 
+    
 
 <form action="{% url 'filter' %}" method="get" name="filter" class="bar-home">
     
     <div class="left-side ganre_list">
-        <h3 class="sear-head editContent">Жанры</h3>
-        <ul class="w3layouts-box-list">
+        <div onclick="showCheckboxes()">
+            <h3 class="sear-head editContent" >Жанры</h3>
+        </div>
+        <div id="checkboxes">
+            <ul class="w3layouts-box-list">
             {% for genre in view.get_genres %}
-                <li class="editContent">
+                <li class="checkbox_list_ganre">
                     <input type="checkbox" class="checked" name="genre" value="{{ genre.id }}">
                     <span class="span editContent">{{ genre.name }}</span>
                 </li>
             {% endfor %}
-        </ul>
+            </ul>    
+        </div>
+        
     </div>
 
 
@@ -24,15 +30,19 @@
     <!-- discounts -->
 
     <div class="left-side">
-        <h3 class="sear-head editContent">Год</h3>
-        <ul class="w3layouts-box-list">
+        <div onclick="showCheckboxestwo()">
+            <h3 class="sear-head editContent">Год</h3>
+        </div>
+        <div id="checkboexstwo">
+        <ul class="w3layoutstwo-box-list">
             {% for game in view.get_years %}
-                <li class="editContent">
+                <li class="checkbox_list_year">
                     <input type="checkbox" class="checked" name="year" value="{{ game.year }}">
                     <span class="span editContent">{{ game.year }}</span>
                 </li>
             {% endfor %}
         </ul>
+        </div>
     </div>
     <button class="poisksleva"
         type="submit">Найти</button>
