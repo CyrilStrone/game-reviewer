@@ -254,16 +254,9 @@ background: #5C407A;
 
 }
 /*--Тут стиль жарна сверху стиля --*/
-.ganre_list ul
-{
-	list-style-type: none;
-	
-	
-}
+
 .w3layouts-box-list span
 {
-
-	list-style-type: none;
 font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -276,39 +269,45 @@ margin-top: 30px;
 
 
 }
-
+.w3layouts-box-list li
+{
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+}
 .w3layouts-box-list 
 {
-	display:block;
+	
 	margin-left: -30px;
 	margin-top: 20px;
-width: 1195px;
-height: 107px;
+	width: 1195px;
+	height: 107px;
+
 }
 .checkbox_list_ganre 
 {
-	display: inline-block;
 margin-top: 5px;
 margin-left: 30px;
 width: 173px;
 }
 /*--Конец нстиля жанр --*/
 /*--Начало стиля год --*/
+
+.checkbox_list_year
+{
+
+margin-top: 5px;
+margin-left: 30px;
+width: 173px;
+
+
+}
 .w3layoutstwo-box-list
 {
-	display:block;
 	margin-left: -237px;
 	margin-top: 20px;
 width: 1195px;
 height: 107px;
-}
-.checkbox_list_year
-{
-
-	display: inline-block;
-margin-top: 5px;
-margin-left: 30px;
-width: 173px;
 }
 .w3layoutstwo-box-list span
 {
@@ -326,13 +325,286 @@ margin-top: 30px;
 
 
 }
-/*--Конец нормального стиля --*/
-html,
-body {
-    margin: 0;
+.w3layoutstwo-box-list li
+{
+	display: inline-block;
+	 list-style-type: none;
+	text-decoration: none;
+}
+
+}
+#checkboxes
+{
+	display: none;
+}
+#checkboxestwo
+{
+	display: none;
+}
+/*--Начало стиля футера --*/
+.footer-top
+{
+	width: 1255px;
+
+background: #DCDCDC;
+border-radius: 15px;
+padding-bottom: 30px;
+
+margin-top: 20px;
+
+
+	margin-left: auto;
+	margin-right: auto;
+}
+.col-lg-4
+{
+	display: inline-block;
+	width: 500px;
+}
+.col-lg-8
+{
+	float: right;
+	display: inline-block;
+	width: 600px;
+}
+
+h2 a
+{
+
+	text-decoration: none;
+}
+h2 a:visited
+{
+	
+	text-decoration: none !important;
+}
+h2 
+{
+	text-decoration: none;
+    color: #333333;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+.Opisanie 
+{
+	color: #333333;
+    margin-left: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight:normal;
+    font-size: 20px;
+}
+.Opisanie-two
+{
+	color: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight:normal;
+    font-size: 20px;
+    margin-top: 40px;
+    width: 500px;
+}
+.followfooter {
+    font-size: 24px;
+    color: #333333;
+    margin-top: 30px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+.w3layouts_social_list a
+{
+	font-size: 26px;
+
+
+}
+.w3layouts_social_list span
+{
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 30px; 
+	width: 30px;
+	height: 30px;
+	text-align: center;
+
+}
+
+.w3layouts_social_list li
+{
+	position: relative;
+	display: inline-block;
+	left: -35px; 
+}
+
+.col-lg-4 ul
+{
+	margin-left: 40px;
+}
+.discord
+{
+	margin-top: 30px;
+	margin-left: 40px; 
+}
+.w3layouts-news-letter
+{
+
+}
+.footer-title 
+{
+	color: #333333;
+    position: relative;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 24px;
+
+    margin-top: 40px;
+}
+.w3layouts-newsletter
+{
+	
+    outline:none;
+}
+input[type="email"] {
+    outline: none;
+    outline: 0;
+    outline-offset: 0;
+    outline:none;
+}
+.w3layouts-newsletter input
+{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	align-items: center;
+	color: #4F4F4F;
+	width: 300px;
+	height: 40px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	border-radius: 6px;
+	outline: none;
+    outline: 0;
+    outline-offset: 0;
+    outline:none;
+
+
+}
+.w3layouts-newsletter button
+{
+	
+	font-size: 18px;
+	align-items: center;
+	color: #4F4F4F;
+	width: 40px;
+	height: 40px;
+
+	border-radius: 6px;
+	outline: none;
+    outline: 0;
     
+
+
+}
+.razdelifooter {
+    color: #333333;
+    position: relative;
+    margin-left: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 24px;
+}
+
+.razdeliminifooter {
+    margin-top: 20px;
+}
+.razdeliminifooter a{
+	color: #333333; 
+	text-decoration: none;
+     font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+}
+.razdeliminifooter li{
+	margin-top: 6px;
+}
+.contactinfomini {
+	margin-top: 20px;
+	
+}
+.contactinfomini a{
+	text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    margin-top: 20px;
+    color: #4F4F4F;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: medium;
+    line-height: 20px;
+}
+.contactinfomini p{
+	margin-top: 5px;
+}
+
+.contactinfofooter {
+    color: #333333;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+/*  А тут самый низ */
+.Jenisei
+{
+	margin-top: 80px;
+	text-align: center;
+	position: relative;
+}
+.knopkavverh {
+
+
+    background-color: #fff;
+    position: relative;
+    
+    height: 50px;
+    /* Высота блока */
+    width: 50px;
+    top: 160px;
+    right: 50px;
+
+    background: url("../images/vverh.png") 100% 100% no-repeat;
+    /* Добавляем фон */
+    background-size: cover;
+    /* Масштабируем фон */
+    display: block;
+    border-spacing: 0;
+}
+
+.knopkavverh:hover {
+    filter: drop-shadow(0px 0px 10px #5C407A);
+}
+/* Change ' +' in order to change the Dropdown symbol */
+
+h h html, body {
+    margin: 0;
     background: #fff;
-   
     scroll-behavior: smooth;
 }
 
@@ -343,7 +615,6 @@ body {
 input[type="button"],
 input[type="submit"],
 input[type="text"],
-input[type="email"],
 input[type="search"] {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -351,18 +622,14 @@ input[type="search"] {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
     outline: none;
-    outline: 0;
+    outline: #FFFFFF;
     outline-offset: 0;
     outline:none;
 }
 
-h1 {
-    font-family: Roboto;
-}
 
-h2 {
-    font-family: Roboto;
-}
+
+
 /*--Здесь стиль жанра года сверху --*/
 h3 {
 
@@ -469,12 +736,7 @@ body img {
 /* header */
 
 /* CSS Document */
-.Jenisei
-{
-	position: relative;
-	margin-top: 50px;
-	margin-left: 20px;
-}
+
 
 
 .toggle,
@@ -493,15 +755,7 @@ nav {
 
 
 
-#logo a:hover {
 
-
-    filter: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-
-
-}
 
 
 
@@ -570,168 +824,17 @@ margin-left: auto;
 
 
 
-.btn1_btn {
-    display: block;
-    margin-left: -535px;
-    background-color: #fff;
-    position: relative;
 
-    height: 22px;
-    /* Высота блока */
-    width: 22px;
-    padding: 1px;
-    border: 0px;
-    margin-top: 6px;
-    background: url("../images/megasearch.png") 100% 100% no-repeat;
-    /* Добавляем фон */
-    background-size: cover;
-    /* Масштабируем фон */
 
-    border-spacing: 0;
-    z-index: 20;
-
-    transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
-
-nav .btn1_btn {
-    display: block;
-}
-
-.btn1_btn:hover {
-    filter: drop-shadow(0px 4px 4px #5C407A);
-}
-
-.btn1_btn:active,
-.btn1_btn:focus {
-    outline: none;
-    filter: drop-shadow(0px 4px 4px #5C407A);
-}
 
 /* Низ */
-.GameReviewer {
-    color: #333333;
-    position: relative;
-    margin-top: 0px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: medium;
-    font-size: 36px;
-    line-height: 42px;
-}
-
-.GameReviewer:hover {
-    background: linear-gradient(180deg, #842BE2 0%, rgba(0, 0, 0, 0.54) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.Opisanie {
-    font-size: 16px;
-    position: relative;
-    margin-top: 0px;
-    margin-left: 10px;
-    color: #4F4F4F;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: medium;
-    line-height: 22px;
-}
-
-.followfooter {
-    font-size: 20px;
-    position: relative;
-    color: #333333;
-    position: relative;
-    margin-top: 30px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-}
-
-
-.razdelifooter {
-    color: #333333;
-    position: relative;
-    margin-left: -10px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.razdeliminifooter {
-    font-size: 16px;
-    position: relative;
-    margin-top: 20px;
-    color: #4F4F4F;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: medium;
-    line-height: 20px;
-}
-
-.contactinfomini {
-    font-size: 16px;
-    position: relative;
-    margin-top: 20px;
-    color: #4F4F4F;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: medium;
-    line-height: 20px;
-}
-
-.contactinfofooter {
-    color: #333333;
-    position: relative;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.Passilkya {
-    color: #333333;
-    position: relative;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 24px;
-}
-
-.knopkavverh {
-
-
-    background-color: #fff;
-    position: absolute;
-    right: 50px;
-    
-    height: 50px;
-    /* Высота блока */
-    width: 50px;
 
 
 
-    background: url("../images/vverh.png") 100% 100% no-repeat;
-    /* Добавляем фон */
-    background-size: cover;
-    /* Масштабируем фон */
-    display: block;
-    border-spacing: 0;
-}
 
-.knopkavverh:hover {
-    filter: drop-shadow(0px 0px 10px #5C407A);
-}
+
+
+
 
 /* Жанры */
 
