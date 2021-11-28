@@ -332,7 +332,6 @@ margin-top: 30px;
 	text-decoration: none;
 }
 
-}
 #checkboxes
 {
 	display: none;
@@ -361,16 +360,11 @@ margin-top: 20px;
 	display: inline-block;
 	width: 500px;
 }
-.col-lg-8
-{
-	float: right;
-	display: inline-block;
-	width: 600px;
-}
+
 
 h2 a
 {
-
+color: #5C407A;
 	text-decoration: none;
 }
 h2 a:visited
@@ -570,6 +564,11 @@ input[type="email"] {
     font-size: 24px;
     line-height: 24px;
 }
+.footer-right
+{
+	float: right;
+	padding-right:30px; 
+}
 /*  А тут самый низ */
 .Jenisei
 {
@@ -586,8 +585,8 @@ input[type="email"] {
     height: 50px;
     /* Высота блока */
     width: 50px;
-    top: 160px;
-    right: 50px;
+    top: 240px;
+    right: 120px;
 
     background: url("../images/vverh.png") 100% 100% no-repeat;
     /* Добавляем фон */
@@ -600,6 +599,169 @@ input[type="email"] {
 .knopkavverh:hover {
     filter: drop-shadow(0px 0px 10px #5C407A);
 }
+
+/* базовые настройки окна с играми */
+.left-ads-display
+{
+	width: 1255px;
+	height: 100%;
+
+	position: static;
+
+	background: #DCDCDC;
+	border-radius: 15px;
+
+	margin-top: 20px;
+	padding-bottom:37.5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.desc1-left
+{
+
+}
+.img-fluid-detail {
+	margin-top: 30px;
+    width: 203px;
+	height: 275px;
+	margin-left: 30px;
+
+	border-radius: 6px;
+}
+.OdnaName{
+
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+color: #4F4F4F;
+text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.desc1-left
+{
+	float: left;
+}
+.desc1-right
+{
+
+	display: inline-block;
+	margin-left:50px;
+	margin-top: 30px;
+}
+.desc1-right ul
+{
+	margin-top: 10px;
+}
+.desc1-right li
+{
+	margin-top: 10px;
+}
+.desc1-right-b
+{
+	display: inline-block;
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 30px;
+
+color: #4F4F4F;
+}
+.desc1-right-b-two
+{
+
+	display: inline-block;
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+align-items: center;
+text-align: center;
+
+color: #828282;
+}
+.desc1-right-b-two a
+{
+ text-decoration: none;
+	color: #828282;
+}
+.shop-sing {
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 30px;
+    
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #4F4F4F;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+
+    font-size: 28px;
+}
+.img-game-shots
+{
+	margin-left: 30px;
+	width: 400px;
+	height: 100%;
+}
+.shop-sing-opis {
+    margin-top: 30px;
+margin-left : 30px;
+padding-right: 30px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 20px;
+color: #4F4F4F;
+}
+/* тут оставить отзыв */
+.single-form-left
+{
+
+}
+h6 {
+	margin-left: 30px;
+     font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 20px;
+color: #4F4F4F;
+
+}
+.contact-single-comm
+{
+	margin-left: 30px;
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 20px;
+color: #4F4F4F;
+
+}
+.feedback-game
+{
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+color: #828282;
+
+	margin-top: 20px;
+	margin-left: 30px;
+	width: 150px;
+}
+.media
+{
+	margin-top: 30px;
+	margin-left: 30px;
+	padding-right: 30px;
+}
 /* Change ' +' in order to change the Dropdown symbol */
 
 h h html, body {
@@ -608,9 +770,59 @@ h h html, body {
     scroll-behavior: smooth;
 }
 
+.btn-feed {
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
 
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 173px;
+height: 50px;
+outline: none;
+background: #5C407A;
+border: none;
+border-radius: 10px;
+}
+.btn-feed, 
+.btn-feed:active, 
+.btn-feed:focus {
+    outline: none;
+}
 
-
+.mt-0
+{
+	margin-top: 10px;
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 20px;
+color: #4F4F4F;
+}
+.mt-2
+{
+	margin-top: 8px;
+	margin-left: 5px;
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+color: #4F4F4F;
+}
+.review_reply
+{
+	font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 20px;
+color: #4F4F4F;
+}
 
 input[type="button"],
 input[type="submit"],
@@ -651,18 +863,21 @@ color: #FFFFFF;
 user-select: none;
 }
 /*--Здесь стиль названий игр под играми --*/
-h4 {
+.item-info-product-name{
     font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 14px;
+font-size: 16px;
 line-height: 21px;
 
-
+margin-top: 10px;
 margin-left: 15px;
-margin-top:10px;
-align-items: center;
 
+color: #333333;
+}
+.item-info-product-name a{
+    
+text-decoration: none;
 color: #333333;
 }
 /*--Здесь стиль жанров в главном экране под играми --*/
@@ -705,13 +920,6 @@ align-items: center;
 h5 {
     font-family: Roboto;
 }
-
-h6 {
-
-    font-family: Roboto;
-
-}
-
 
 ul {
     margin: 0;
@@ -927,60 +1135,14 @@ color: #5C407A;
 
 /* Одна игра */
 
-.desc1-right {
-    color: #4F4F4F;
 
-    font-family: Roboto;
-    font-style: normal;
 
-    font-size: 16px;
-}
 
-.OdnaName {
-    color: #333333;
 
-    font-family: Roboto;
-    font-style: bold;
 
-    font-size: 26px;
-}
 
-.shareslovo {
-    color: #4F4F4F;
 
-    font-family: Roboto;
-    font-style: normal;
 
-    font-size: 18px;
-    position: relative;
-    left: 0px;
-}
-
-.shop-sing {
-    color: #333333;
-    position: relative;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-
-    font-size: 28px;
-}
-
-.shop-sing-opis {
-    color: #333333;
-    position: relative;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-
-    font-size: 18px;
-}
-
-.mt-3 .btn .btn-success .btn-block .py-3 {
-    background: #333333;
-}
 
 .ava {
     width: 90px;
