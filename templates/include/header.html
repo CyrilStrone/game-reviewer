@@ -11,9 +11,13 @@
                 <a href="/" id="logo"></a>
                 </div>
             
-                <div class="search-bar-w3layouts-newsletter">
+                <div
+                     class="search-bar-w3layouts-newsletter">
                         <form action="{% url 'search' %}" method="get" class="d-flex_editContent">
-                            <input type="search" placeholder="   поиск..." name="q" class="form-control" required="">
+                            <input type="search" placeholder="Введите название..." name="q" class="form-control" >
+                            
+                        
+                    
                 </div>
                 <div class="button-header-next">
                     <div class="home_page">
@@ -22,8 +26,8 @@
                 
                     {% if user.is_authenticated %}
                     <span class="username">
-                        <a href="{% url 'account_logout' %}" style="color: rgba(92, 64, 122, 1)
-                                " ;> {{ user.username}}</a></span>
+                        <a href="{% url 'account_logout' %}" 
+                                 ;> {{ user.username}}</a></span>
                     {% else %}
                     <a href="{% url 'account_login' %}" class="vhod-button">ВХОД
                     </a>
