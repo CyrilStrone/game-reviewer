@@ -1,35 +1,19 @@
-{% extends 'games/games_base.html' %}
-{% load i18n %}
-{% block head_title %}{% trans "Signup" %}{% endblock %}
-{% block content %}
-<div class="regwhite">
-    <h1 class="vhodreal1"> Регистрация в </h1>
-    <h1 class="vhodreal2"> GameReviewer</h1>
-    
-    <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-        <div class="buttonreg">
-            {% csrf_token %}
-            <div class="knopkanorm2">
-                <p>
-                    <label for="id_username"></label> <input class="knopkanorm2"type="text" name="username" placeholder="Имя пользователя" autocomplete="username" maxlength="326" required="" id="id_username">
-                </p>
-                <p>
-                    <label for="id_email"></label> <input class="knopkanorm2"type="email" name="email" placeholder="E-mail адрес" maxlength="326" autocomplete="email" id="id_email">
-                </p>
-                <p>
-                    <label for="id_password1"></label> <input class="knopkanorm2" type="password" name="password1" placeholder="Пароль" autocomplete="new-password" maxlength="326" required="" id="id_password1">
-                </p>
-                <p>
-                    <label for="id_password2"></label> <input class="knopkanorm2" type="password" name="password2" maxlength="326" placeholder="Пароль (ещё раз)" required="" id="id_password2">
-                </p>
-            </div>
-            {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
+ {% extends 'games/games_base.html' %}
 
-            <button class="primaryAction2" type="submit">Регистрация</button>
-        </div>
-    </form>
-    
-</div>
+{% block head_title %}Signup{% endblock %}
+
+{% block content %}
+<h1>Sign Up</h1>
+
+<p>Already have an account? Then please <a href="{{ login_url }}">sign in</a>.</p>
+
+<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit">Sign Up &raquo;</button>
+</form>
+
 {% endblock %}
