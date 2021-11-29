@@ -838,7 +838,110 @@ font-size: 18px;
 line-height: 20px;
 color: #4F4F4F;
 }
+/*--Здесь Регистрация --*/
+.signupblock {
+	position: static;
+	width: 1255px;
+	
+	
 
+	margin-left: auto;
+	margin-right: auto;
+
+    background: #333333;
+    height: 766px;
+
+
+
+
+	position: static;
+
+	background: #DCDCDC;
+	border-radius: 15px;
+
+	margin-top: 20px;
+	
+    
+}
+.signupblock h1
+{
+	position: relative;
+    text-align: center;
+    color: #333333;
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    top: 100px;
+}
+.signupblock p
+{
+	
+	
+	
+    color: #333333;
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+
+.signupblock a
+{
+	text-decoration: none;
+	color: #333333;
+}
+.signup
+{
+	margin-top: 120px;
+	width: 326px;
+	
+	
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.signup input
+{
+	top:30px;
+	margin-top: 10px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 326px;
+	height: 51px;
+	border-radius: 5px;
+	border:none;
+	outline: none;
+
+}
+.signup label
+{
+	display: none;
+
+}
+.signup button
+{
+
+	margin-top: 30px;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+
+    width: 326px;
+    height: 51px;
+    background: #5C407A;
+    border-radius: 6px;
+}
 input[type="button"],
 input[type="submit"],
 input[type="text"],
