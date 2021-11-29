@@ -3,10 +3,10 @@
 <header class="header">
     <div class="container-fluid px-lg-5">
         <!-- nav -->
-        <nav class="py-4">
+        <div class="all-header">
+            <nav class="py-4">
             
-            <div id="logo">
-                <h1> <a href="/" class="editContent"></a></h1>
+            <div  href="/" id="logo">
                 
             </div>
             
@@ -20,15 +20,12 @@
                      class="search-bar-w3layouts-newsletter">
                         <form action="{% url 'search' %}" method="get" class="d-flex_editContent">
                             <input type="search" placeholder="Введите название..." name="q" class="form-control" required="">
-                            
-                        
-                    
                 </li>
                 <li>
                 <button  class="btn1_btn"></button>
                 </form>
                 </li>
-                <li class="active">
+                <li class="home_page">
                     <a href="/">ГЛАВНАЯ</a>
                 </li>
 
@@ -46,8 +43,7 @@
                 <li>
                     {% if user.is_authenticated %}
                     <span class="username">
-                        <a href="{% url 'account_logout' %}" style="color: rgba(92, 64, 122, 1)
-                                " ;> {{ user.username}}</a></span>
+                        <a href="{% url 'account_logout' %}" ;> {{ user.username}}</a></span>
                     {% else %}
                     <a href="{% url 'account_login' %}" class="vhod-button">ВХОД
                     </a>
@@ -57,6 +53,8 @@
                 </a>
             </ul>
         </nav>
+        </div>
+        
         <!-- //nav -->
     </div>
 </header>
