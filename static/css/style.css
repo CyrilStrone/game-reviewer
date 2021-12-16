@@ -16,7 +16,6 @@
     
     
     display: inline-block;
-    margin-left: 40px;
     width: 100px;
     height: 100px;
 
@@ -24,24 +23,12 @@
 
 }
 
-.logo_header
-{
-display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin-left: 0px;
-    top: 5px;
-}
-.logo_header:hover, :focus 
-{
-    
-	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+
 /*--Стиль поиска хэдера --*/
 .search-bar-w3layouts-newsletter
 {
 	display: inline-block;
-	margin-right: 125px;
+	margin-right: 85px;
 	margin-top: 30px;
 
     transition: all .5s ease-in-out;
@@ -53,16 +40,14 @@ display: inline-block;
 }
 .search-bar-w3layouts-newsletter input
 {
+	padding-left: 20px;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 28px;
-	display: flex;
-	align-items: center;
 	color: #4F4F4F;
 
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .form-control 
 {
@@ -116,10 +101,11 @@ display: inline-block;
 {
 	margin-top: 34px;
 	display: inline-block;
-	margin-right: 125px;
+	margin-right: 80px;
 }
 .username a
 {
+	text-transform:uppercase;
 	 text-decoration: none;
 	font-family: Roboto;
 	font-style: normal;
@@ -401,7 +387,7 @@ h2
 }
 .Opisanie 
 {
-	color: #333333;
+	color: #828282;
     margin-left: 40px;
     font-family: Roboto;
     font-style: normal;
@@ -410,7 +396,7 @@ h2
 }
 .Opisanie-two
 {
-	color: #333333;
+	color: #828282;
     font-family: Roboto;
     font-style: normal;
     font-weight:normal;
@@ -420,12 +406,12 @@ h2
 }
 .followfooter {
     font-size: 24px;
-    color: #333333;
+    color: #4F4F4F;
     margin-top: 30px;
 
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    font-style: bold;
+    font-weight: bold;
 }
 .w3layouts_social_list a
 {
@@ -466,12 +452,12 @@ h2
 }
 .footer-title 
 {
-	color: #333333;
+	color: #4F4F4F;
     position: relative;
 
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 24px;
 
@@ -499,15 +485,23 @@ input[type="email"] {
 	color: #4F4F4F;
 	width: 300px;
 	height: 40px;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
 
-	border-radius: 6px;
-	outline: none;
+	outline: inherit !important;;
     outline: 0;
     outline-offset: 0;
     outline:none;
+    border: none;
+    box-shadow: inherit !important;
+filter: inherit !important;
 
 
+}
+.w3layouts-newsletter input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+    box-shadow: inherit !important;
+filter: inherit !important;
 }
 .w3layouts-newsletter button
 {
@@ -517,21 +511,28 @@ input[type="email"] {
 	color: #4F4F4F;
 	width: 40px;
 	height: 40px;
-
+	margin-left: 10px;
 	border-radius: 6px;
 	outline: none;
     outline: 0;
-    
+    outline: inherit !important;;
+    outline: 0;
+    outline-offset: 0;
+    outline:none;
+    border: none;
+    box-shadow: inherit !important;
+filter: inherit !important;
+
 
 
 }
 .razdelifooter {
-    color: #333333;
+    color: #4F4F4F;
     position: relative;
     margin-left: 0px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 26px;
     line-height: 24px;
 }
@@ -540,7 +541,7 @@ input[type="email"] {
     margin-top: 20px;
 }
 .razdeliminifooter a{
-	color: #333333; 
+	color: #828282; 
 	text-decoration: none;
      font-family: Roboto;
     font-style: normal;
@@ -557,10 +558,10 @@ input[type="email"] {
 }
 .contactinfomini a{
 	text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     position: relative;
     margin-top: 20px;
-    color: #4F4F4F;
+    color: #828282;
     font-family: Roboto;
     font-style: normal;
     font-weight: medium;
@@ -571,12 +572,12 @@ input[type="email"] {
 }
 
 .contactinfofooter {
-    color: #333333;
+    color: #4F4F4F;
 
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 26px;
     line-height: 24px;
 }
 .footer-right
@@ -749,6 +750,7 @@ color: #4F4F4F;
 }
 .contact-single-comm
 {
+	padding-bottom: 20px;
 	margin-left: 30px;
 	font-family: Roboto;
 font-style: normal;
@@ -1455,7 +1457,6 @@ color: #5C407A;
 {
 	position: relative;
 	top:70px;
-	margin-top: -10px;
 	margin-left: auto;
     margin-right: auto;
 	width: 326px;
@@ -1558,3 +1559,173 @@ li>a:only-child:after {
 
 /* Media Queries
 --------------------------------------------- */
+#real-estates-detail
+{
+	position: static;
+	width: 1255px;
+	
+	border-radius: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+
+	background: #DCDCDC;
+	margin-left: auto;
+	margin-right: auto;
+}
+.panel-heading
+{
+	float: left;
+}
+.profile-photo
+{
+	display: inline-block;
+width: 173px;
+height: 173px;
+
+border-radius: 7px;
+margin: 0;
+overflow: hidden;
+}
+#author
+{
+	margin-left: 30px;
+}
+.panel-body
+{
+	display: inline-block;
+}
+.panel-body h3
+{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+
+color: #333333;
+
+}
+.panel-body h4
+{
+	margin-top: 30px;
+	margin-bottom: 0;
+	padding: 0;
+	font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 42px;
+align-items: center;
+
+color: #5C407A;
+
+color: #333333;
+
+}
+.panel-body p
+{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 42px;
+align-items: center;
+
+color: #5C407A;
+
+}
+.label-warning
+{
+	font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 42px;
+align-items: center;
+
+color: #4F4F4F;
+}
+
+.topgame-profile a
+{
+list-style-type: none;
+    text-decoration: none;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 42px;
+align-items: center;
+
+color: #4F4F4F;
+}
+
+
+#real-estates-detail-two
+{
+	position: static;
+	width: 1255px;
+	
+	border-radius: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+
+	background: #DCDCDC;
+	margin-left: auto;
+	margin-right: auto;
+}
+.history-profile-one
+{
+	margin:0;
+	padding: 0;
+list-style-type: none;
+    text-decoration: none;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 42px;
+align-items: center;
+
+color: #4F4F4F;
+}
+.history-profile-two
+{
+	padding-left: 10px;
+list-style-type: none;
+    text-decoration: none;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 42px;
+align-items: center;
+
+color: #4F4F4F;
+}
+.form-control-comment
+{
+	display: block;
+	height: 35px;
+	width: 250px;
+	margin-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.form-control-comment input:hover
+{
+	outline: none;
+border: none;
+}
+.contact-single
+{
+	width: 700px;
+}

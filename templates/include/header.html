@@ -6,7 +6,8 @@
         <div class="all-header">
             <nav class="py-4">
             
-            <div  href="/" id="logo">
+            <div id="logo">
+            	<a href="/" id="logo"></a>
                 
             </div>
             
@@ -43,17 +44,15 @@
                 <li>
                     {% if user.is_authenticated %}
                     <li class="home_page">
-                    <a href="/profile/">Профиль</a>
+                    <a href="/profile/">{{ user.username}}</a>
                 </li>
                     <span class="username">
-                        <a href="{% url 'account_logout' %}" ;> {{ user.username}}</a></span>
+                        <a href="{% url 'account_logout' %}" ;> ВЫХОД</a></span>
                     {% else %}
                     <a href="{% url 'account_login' %}" class="vhod-button">ВХОД
                     </a>
                     {% endif%}
                 </li>
-                <a class="active">
-                </a>
             </ul>
         </nav>
         </div>
