@@ -1032,9 +1032,9 @@ align-items: center;
 .stars
 {
 	width:85px;
-	margin-top:-32px;
+	margin-top:-28px;
 	float: right; 
-	margin-right: 14px;
+	margin-right: 8px;
 	font-size: 0.9rem;
 }
 h5 {
@@ -1728,4 +1728,61 @@ border: none;
 .contact-single
 {
 	width: 700px;
+}
+
+.page-number ul{
+	vertical-align: middle;
+    text-align: center;
+margin: 0;
+vertical-align: middle;
+padding: 0;
+
+}
+.page-number li{
+	display: inline-block;
+vertical-align: middle;
+	text-decoration: none;
+	list-style-type: none;
+	align-items: center;
+}
+.pagination__item{
+
+	
+    
+}
+.page-number a{
+	display: grid;
+	align-items: center;
+
+	width: 40px;
+    min-height: 40px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 33px;
+
+	align-items: center;
+	text-decoration: none;
+	list-style-type: none;
+
+	color: #4F4F4F;
+}
+
+
+
+
+
+.page-number a:hover {
+
+
+    background: #5C407A;
+    border-radius: 22px;
+    color: #FFFFFF;
+}
+
+.page-number a:active {
+   background: #5C407A;
+    border-radius: 22px;
+    color: #FFFFFF;
 }
