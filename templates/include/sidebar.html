@@ -5,19 +5,20 @@
 <form action="{% url 'filter' %}" method="get" name="filter" class="bar-home">
 
     <div class="left-side ganre_list">
-        <div onclick="showCheckboxes()">
-            <h3 class="sear-head editContent">Жанры</h3>
+        <div class="sear-head" onclick="showCheckboxes()">
+            Genres
         </div>
 
 
 
 
         <div id="checkboxes">
-            <div class="w3layouts-box-list">
+            <div class="w3layouts-box-list" id="w3layouts-box-list__ganre">
                 {% for genre in view.get_genres %}
-                <li class="checkbox_list_year">
-                    <input type="checkbox" class="checked" name="genre" value="{{ genre.id }}">
-                    <span class="span editContent">{{ genre.name }}</span>
+                <li class="checkbox_list_year" id="checkbox_list_year">
+
+                    <input type="checkbox" class="custom-checkbox" name="genre" id="{{ genre.id }}" value="{{ genre.id }}">
+                    <label for="{{ genre.id }}">{{ genre.name }}</label>
                 </li>
                 {% endfor %}
 
@@ -36,15 +37,16 @@
     <!-- discounts -->
 
     <div class="left-side">
-        <div onclick="showCheckboxestwo()">
-            <h3 class="sear-head editContent">Год</h3>
+        <div class="sear-head" onclick="showCheckboxestwo()">
+            Year
         </div>
         <div id="checkboxestwo">
-            <div class="w3layoutstwo-box-list">
+            <div class="w3layoutstwo-box-list w3layouts-box-list__year" id="w3layouts-box-list__year">
                 {% for game in view.get_years %}
                 <li class="checkbox_list_year">
-                    <input type="checkbox" class="checked" name="year" value="{{ game.year }}">
-                    <span class="span editContent">{{ game.year }}</span>
+                    <input type="checkbox" class="custom-checkbox" name="year" id="{{ game.year }}" value="{{ game.year }}">
+
+                    <label for="{{ game.year }}">{{ game.year }}</label>
                 </li>
                 {% endfor %}
             </div>
@@ -52,8 +54,8 @@
     </div>
     <div class="search-bar-w3layouts-newsletter">
         <form action="{% url 'search' %}" method="get" class="d-flex_editContent">
-            <input type="search" placeholder="Введите название..." name="q" class="form-control">
+            <input type="search" placeholder="Enter the name..." name="q" class="form-control">
     </div>
-    <button class="poisksleva" type="submit">Найти</button>
+    <button class="poisksleva" type="submit">Find</button>
     </form>
     <!-- {% get_last_games count=3 %} -->
