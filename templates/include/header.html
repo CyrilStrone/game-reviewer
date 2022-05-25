@@ -5,58 +5,49 @@
         <!-- nav -->
         <div class="all-header">
             <nav class="py-4">
-            
-            <div id="logo">
-            	<a href="/" id="logo"></a>
-                
-            </div>
-            
-               
-            
-            <label for="drop" class="toggle"></label>
-            <input type="checkbox" id="drop">
-            
-            <ul class="menu mt-2">
-                <li
-                     class="search-bar-w3layouts-newsletter">
-                        <form action="{% url 'search' %}" method="get" class="d-flex_editContent">
-                            <input type="search" placeholder="Введите название..." name="q" class="form-control" required="">
-                </li>
-                <li>
-                <button  class="btn1_btn"></button>
-                </form>
-                </li>
-                <li class="home_page">
-                    <a href="/">ГЛАВНАЯ</a>
-                </li>
 
-                <li>
-                    <!-- First Tier Drop Down -->
-                    <input type="checkbox" id="drop-2">
-                    <ul>
-                        {% for genre in view.get_genres %}
-                        <li><a href="{% url 'genre_view' genre.url%}" align="center">{{ genre.name }}
+                <div id="logo">
+                    <a href="/" id="logo"></a>
+
+                </div>
+
+
+
+                <label for="drop" class="toggle"></label>
+                <input type="checkbox" id="drop">
+
+                <ul class="menu mt-2">
+
+                    <li>
+                        <!-- First Tier Drop Down -->
+                        <input type="checkbox" id="drop-2">
+                        <ul>
+                            {% for genre in view.get_genres %}
+                            <li><a href="{% url 'genre_view' genre.url%}" align="center">{{ genre.name }}
                             </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="home_page home_page__style">
+                        <a href="/">ГЛАВНАЯ</a>
+                    </li>
+
+
+                    <li>
+                        {% if user.is_authenticated %}
+                        <li class="home_page home_page__style">
+                            <a href="/profile/">{{ user.username}}</a>
                         </li>
-                        {% endfor %}
-                    </ul>
-                </li>
-                <li>
-                    {% if user.is_authenticated %}
-                    <li class="home_page">
-                    <a href="/profile/">{{ user.username}}</a>
-                </li>
-                    <span class="username">
-                        <a href="{% url 'account_logout' %}" ;> ВЫХОД</a></span>
-                    {% else %}
-                    <a href="{% url 'account_login' %}" class="vhod-button">ВХОД
-                    </a>
-                    {% endif%}
-                </li>
-            </ul>
-        </nav>
+                        <span class="home_page">
+                        <a href="{% url 'account_logout' %}" ;> ВЫХОД</a></span> {% else %}
+                        <a href="{% url 'account_login' %}" class="home_page">ВХОД
+                    </a> {% endif%}
+                    </li>
+                </ul>
+            </nav>
         </div>
-        
+
         <!-- //nav -->
     </div>
 </header>

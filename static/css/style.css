@@ -1,381 +1,348 @@
 /*--Нормальный стиль --*/
-/*--Стиль хэдера --*/
-.header 
-{
-    position: static;
 
+
+/*--Стиль хэдера --*/
+
+.header {
+    position: static;
     width: 100%;
     height: 110px;
-
     background-color: #5C407A;
 }
+
+
 /*--Стиль лого хэдера --*/
-#logo
-{
-    background: url("../images/logosuper.png") ;
-    
-    
+
+#logo {
+    background: url("../images/logosuper.png");
     display: inline-block;
     width: 100px;
     height: 100px;
-
     background-size: cover;
-
 }
 
 
 /*--Стиль поиска хэдера --*/
-.search-bar-w3layouts-newsletter
-{
-	display: inline-block;
-	margin-right: 85px;
-	margin-top: 30px;
 
-    transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+.search-bar-w3layouts-newsletter {
+    display: inline-block;
+    outline: none;
+    margin-top: 30px;
+    vertical-align: text-top;
+    margin-left: 30px;
+    height: 50px;
+}
 
-    outline:none;
+.search-bar-w3layouts-newsletter input {
+    padding-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4F4F4F;
 }
-.search-bar-w3layouts-newsletter input
-{
-	padding-left: 20px;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 28px;
-	color: #4F4F4F;
 
+.form-control {
+    width: 470px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: #FFFFFF;
 }
-.form-control 
-{
- 	width: 445px;
-	height: 40px;
-	background: #FFFFFF;
-	border-radius: 8px;
-	border: #FFFFFF;
 
+.form-control:hover,
+ :focus {
+    text-decoration: none;
+    border: #FFFFFF;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.form-control:hover, :focus 
-{
-	text-decoration:none; 
-	border: #FFFFFF;
-	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+
 
 /*--Стиль элементов хэдера кроме лого и поиска--*/
 
-.all-header
-{
-	position: static;
-	width: 1255px;
-	height: 110px;
-	
-	
-
-	margin-left: auto;
-	margin-right: auto;
-
-   
+.all-header {
+    position: static;
+    width: 1255px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.home_page a
-{
+.home_page a {
     text-decoration: none;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-
-    
-}
-.home_page
-{
-	margin-top: 34px;
-	display: inline-block;
-	margin-right: 80px;
-}
-.username a
-{
-	text-transform:uppercase;
-	 text-decoration: none;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #FFFFFF;
 }
-.username
-{
 
-	margin-top: 34px;
-	display: inline-block;
-	margin-right: 125px;
-    
-}
-.username-button
-{
-	text-decoration: none;
+.home_page {
     display: inline-block;
-
-    font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 28px;
-
-	align-items: center;
-	text-align: center;
-
- 	color: #FFFFFF;
-
-    
-}
-.vhod-button
-{
-	margin-top: 34px;
-	display: inline-block;
-	margin-right: 125px;
-
+    margin-right: 30px;
+    display: inline-block;
     text-decoration: none;
-
     font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
+    font-style: normal;
+    font-weight: bold;
     font-size: 16px;
     line-height: 28px;
-    
+    display: flex;
     align-items: center;
     text-align: center;
-
     color: #FFFFFF;
+    height: 110px;
+}
 
+.home_page__style {
+    margin-right: 80px;
 }
-.btn1_btn
-{
-	display: none;
+
+.username a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }
+
+.username {
+    margin-top: 34px;
+    display: inline-block;
+    margin-right: 125px;
+}
+
+.username-button {
+    text-decoration: none;
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.vhod-button {
+    display: inline-block;
+    margin-right: 125px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    height: 110px;
+}
+
+.btn1_btn {
+    display: none;
+}
+
+
 /*тут главная*/
+
+
 /*Здесь квадрат вокруг игры*/
-.games_page_gr
-{
-	width: 1255px;
-	height: 100%;
 
-	position: static;
-
-	background: #DCDCDC;
-	border-radius: 15px;
-
-	margin-top: 20px;
-	padding-bottom:37.5px;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-.product_price
-{
-	padding-bottom: 10px;
-}
-/*Здесь ксами игры в квадрате*/
-.product-men
-{
-	-webkit-box-flex: 0;
-    
-    display: inline-block;
-
-    margin-left: 37.5px;
-    margin-top:37.5px;
-    
-    width: 202.5px;
+.games_page_gr {
+    width: 1255px;
     height: 100%;
+    position: static;
+    background: #DCDFE0;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-bottom: 37.5px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.product_price {}
+
+
+/*Здесь ксами игры в квадрате*/
+
+.product-men {
+    -webkit-box-flex: 0;
+    display: inline-block;
+    margin-left: 37.5px;
+    margin-top: 37.5px;
+    width: 202.5px;
+    height: 345px;
     background: #F4F2F2;
     border-radius: 15px;
+    vertical-align: top;
+    position: relative;
 }
+
+.product-shoe-info {}
+
+.item-info-product {
+    position: absolute;
+    bottom: 0px;
+    width: 202.5px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
 /*Здесь картинка игры*/
+
 .img-fluid {
-	margin-top: 14.25px;
+    margin-top: 14.25px;
     width: 175.5px;
-	height: 226.5px;
-	margin-left: 14.25px;
-
-	border-radius: 6px;
+    height: 100%;
+    margin-left: 14.25px;
+    border-radius: 6px;
 }
+
+
 /*--Конец Стиль хэдера --*/
+
+
 /*--Здесь стиль поиска по жанром и тд --*/
-#side-bar-script
-{
-		width: 1255px;
 
-background: #DCDCDC;
-border-radius: 15px;
-padding-bottom: 30px;
+#side-bar-script {
+    width: 1255px;
+    background: #DCDFE0;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-margin-top: 20px;
+.left-side {
+    width: 173px;
+    height: 50px;
+    border-radius: 10px;
+    background: #5C407A;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: static;
+    display: inline-block;
+    vertical-align: text-top;
+}
 
-
-	margin-left: auto;
-	margin-right: auto;
+.left-side:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
-.left-side
-{
-	width: 173px;
-height: 50px;
-border-radius: 10px;
-background: #5C407A;
-	margin-top: 30px;
-	margin-left: 30px;
-	position: static;
-	display: inline-block;
-	vertical-align: text-top;
-
-
-
-}
-.left-side:hover
-{
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-}
 /*--Тут стиль жарна сверху стиля --*/
 
-.w3layouts-box-list span
-{
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 23px;
-align-items: center;
-
-color: #828282;
-margin-top: 30px;
-
-
+.w3layouts-box-list span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    align-items: center;
+    color: #828282;
+    margin-top: 30px;
 }
-.w3layouts-box-list li
-{
-	display: inline-block;
-	list-style-type: none;
-	text-decoration: none;
-}
-.w3layouts-box-list 
-{
-	
-	margin-left: -30px;
-	margin-top: 20px;
-	width: 1195px;
-	height: 107px;
 
+.w3layouts-box-list li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
 }
-.checkbox_list_ganre 
-{
-margin-top: 5px;
-margin-left: 30px;
-width: 173px;
+
+.w3layouts-box-list {
+    margin-left: -30px;
+    margin-top: 20px;
+    width: 1195px;
+    height: 107px;
 }
+
+.checkbox_list_ganre {
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 173px;
+}
+
+
 /*--Конец нстиля жанр --*/
+
+
 /*--Начало стиля год --*/
 
-.checkbox_list_year
-{
-
-margin-top: 5px;
-margin-left: 30px;
-width: 173px;
-
-
-}
-.w3layoutstwo-box-list
-{
-	margin-left: -237px;
-	margin-top: 20px;
-width: 1195px;
-height: 107px;
-}
-.w3layoutstwo-box-list span
-{
-
-	list-style-type: none;
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 23px;
-align-items: center;
-
-color: #828282;
-margin-top: 30px;
-
-
-}
-.w3layoutstwo-box-list li
-{
-	display: inline-block;
-	 list-style-type: none;
-	text-decoration: none;
+.checkbox_list_year {
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 173px;
 }
 
-#checkboxes
-{
-	display: none;
+.w3layoutstwo-box-list {
+    margin-left: -237px;
+    margin-top: 20px;
+    width: 1195px;
+    height: 107px;
 }
-#checkboxestwo
-{
-	display: none;
+
+.w3layoutstwo-box-list span {
+    list-style-type: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    align-items: center;
+    color: #828282;
+    margin-top: 30px;
 }
+
+.w3layoutstwo-box-list li {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#checkboxes {
+    display: none;
+}
+
+#checkboxestwo {
+    display: none;
+}
+
+
 /*--Начало стиля футера --*/
-.footer-top
-{
-	width: 1255px;
 
-background: #DCDCDC;
-border-radius: 15px;
-padding-bottom: 30px;
-
-margin-top: 20px;
-
-
-	margin-left: auto;
-	margin-right: auto;
-}
-.col-lg-4
-{
-	display: inline-block;
-	width: 500px;
+.footer-top {
+    width: 1255px;
+    background: #DCDFE0;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.col-lg-4 {
+    display: inline-block;
+    width: 500px;
+}
 
-h2 a
-{
-color: #5C407A;
-	text-decoration: none;
+h2 a {
+    color: #5C407A;
+    text-decoration: none;
 }
-h2 a:visited
-{
-	
-	text-decoration: none !important;
+
+h2 a:visited {
+    text-decoration: none !important;
 }
-h2 
-{
-	text-decoration: none;
+
+h2 {
+    text-decoration: none;
     color: #333333;
     margin-top: 40px;
     margin-left: 40px;
@@ -385,147 +352,137 @@ h2
     font-size: 36px;
     line-height: 42px;
 }
-.Opisanie 
-{
-	color: #828282;
+
+.Opisanie {
+    color: #828282;
     margin-left: 40px;
     font-family: Roboto;
     font-style: normal;
-    font-weight:normal;
+    font-weight: normal;
     font-size: 20px;
 }
-.Opisanie-two
-{
-	color: #828282;
+
+.Opisanie-two {
+    color: #828282;
     font-family: Roboto;
     font-style: normal;
-    font-weight:normal;
+    font-weight: normal;
     font-size: 20px;
     margin-top: 40px;
     width: 500px;
 }
+
 .followfooter {
     font-size: 24px;
     color: #4F4F4F;
     margin-top: 30px;
-
     font-family: Roboto;
     font-style: bold;
     font-weight: bold;
 }
-.w3layouts_social_list a
-{
-	font-size: 26px;
 
-
-}
-.w3layouts_social_list span
-{
-	display: inline-block;
-	margin-top: 0px;
-	margin-left: 30px; 
-	width: 30px;
-	height: 30px;
-	text-align: center;
-
+.w3layouts_social_list a {
+    font-size: 26px;
 }
 
-.w3layouts_social_list li
-{
-	position: relative;
-	display: inline-block;
-	left: -35px; 
+.w3layouts_social_list span {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
 
-.col-lg-4 ul
-{
-	margin-left: 40px;
-}
-.discord
-{
-	margin-top: 30px;
-	margin-left: 40px; 
-}
-.w3layouts-news-letter
-{
-
-}
-.footer-title 
-{
-	color: #4F4F4F;
+.w3layouts_social_list li {
     position: relative;
+    display: inline-block;
+    left: -35px;
+}
 
+.col-lg-4 ul {
+    margin-left: 40px;
+}
+
+.discord {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.w3layouts-news-letter {}
+
+.footer-title {
+    color: #4F4F4F;
+    position: relative;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 24px;
-
     margin-top: 40px;
 }
-.w3layouts-newsletter
-{
-	
-    outline:none;
+
+.w3layouts-newsletter {
+    outline: none;
 }
+
 input[type="email"] {
     outline: none;
     outline: 0;
     outline-offset: 0;
-    outline:none;
+    outline: none;
 }
-.w3layouts-newsletter input
-{
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 28px;
-	align-items: center;
-	color: #4F4F4F;
-	width: 300px;
-	height: 40px;
-	border-radius: 5px;
 
-	outline: inherit !important;;
+.w3layouts-newsletter input {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    color: #4F4F4F;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    outline: inherit !important;
+    ;
     outline: 0;
     outline-offset: 0;
-    outline:none;
+    outline: none;
     border: none;
     box-shadow: inherit !important;
-filter: inherit !important;
-
-
+    filter: inherit !important;
 }
-.w3layouts-newsletter input:active, :hover, :focus {
+
+.w3layouts-newsletter input:active,
+ :hover,
+ :focus {
     outline: 0;
     outline-offset: 0;
     box-shadow: inherit !important;
-filter: inherit !important;
+    filter: inherit !important;
 }
-.w3layouts-newsletter button
-{
-	
-	font-size: 18px;
-	align-items: center;
-	color: #4F4F4F;
-	width: 40px;
-	height: 40px;
-	margin-left: 10px;
-	border-radius: 6px;
-	outline: none;
+
+.w3layouts-newsletter button {
+    font-size: 18px;
+    align-items: center;
+    color: #4F4F4F;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 6px;
+    outline: none;
     outline: 0;
-    outline: inherit !important;;
+    outline: inherit !important;
+    ;
     outline: 0;
     outline-offset: 0;
-    outline:none;
+    outline: none;
     border: none;
     box-shadow: inherit !important;
-filter: inherit !important;
-
-
-
+    filter: inherit !important;
 }
+
 .razdelifooter {
     color: #4F4F4F;
     position: relative;
@@ -540,24 +497,27 @@ filter: inherit !important;
 .razdeliminifooter {
     margin-top: 20px;
 }
-.razdeliminifooter a{
-	color: #828282; 
-	text-decoration: none;
-     font-family: Roboto;
+
+.razdeliminifooter a {
+    color: #828282;
+    text-decoration: none;
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
 }
-.razdeliminifooter li{
-	margin-top: 6px;
+
+.razdeliminifooter li {
+    margin-top: 6px;
 }
+
 .contactinfomini {
-	margin-top: 20px;
-	
+    margin-top: 20px;
 }
-.contactinfomini a{
-	text-decoration: none;
+
+.contactinfomini a {
+    text-decoration: none;
     font-size: 20px;
     position: relative;
     margin-top: 20px;
@@ -567,383 +527,349 @@ filter: inherit !important;
     font-weight: medium;
     line-height: 20px;
 }
-.contactinfomini p{
-	margin-top: 5px;
+
+.contactinfomini p {
+    margin-top: 5px;
 }
 
 .contactinfofooter {
     color: #4F4F4F;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 24px;
 }
-.footer-right
-{
-	float: right;
-	padding-right:30px; 
+
+.footer-right {
+    float: right;
+    padding-right: 30px;
 }
+
+
 /*  А тут самый низ */
-.Jenisei
-{
-	margin-top: 80px;
-	text-align: center;
-	position: relative;
+
+.Jenisei {
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
 }
+
 .knopkavverh {
-
-
     background-color: #fff;
     position: relative;
-    
     height: 50px;
     /* Высота блока */
     width: 50px;
     top: 240px;
     right: 120px;
-
     background: url("../images/vverh.png") 100% 100% no-repeat;
     /* Добавляем фон */
     background-size: cover;
     /* Масштабируем фон */
     display: block;
     border-spacing: 0;
+    scroll-behavior: smooth;
 }
 
 .knopkavverh:hover {
     filter: drop-shadow(0px 0px 10px #5C407A);
 }
 
+
 /* базовые настройки окна с играми */
-.left-ads-display
-{
-	width: 1255px;
-	height: 100%;
 
-	position: static;
-
-	background: #DCDCDC;
-	border-radius: 15px;
-
-	margin-top: 20px;
-	padding-bottom:37.5px;
-	margin-left: auto;
-	margin-right: auto;
+.left-ads-display {
+    width: 1255px;
+    height: 100%;
+    position: static;
+    background: #DCDFE0;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-bottom: 37.5px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.desc1-left
-{
 
-}
+.desc1-left {}
+
 .img-fluid-detail {
-	margin-top: 30px;
+    margin-top: 30px;
     width: 203px;
-	height: 275px;
-	margin-left: 30px;
+    height: 275px;
+    margin-left: 30px;
+    border-radius: 6px;
+}
 
-	border-radius: 6px;
-}
-.OdnaName{
-
-    font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 28px;
-line-height: 33px;
-color: #4F4F4F;
-text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-}
-.desc1-left
-{
-	float: left;
-}
-.desc1-right
-{
-
-	display: inline-block;
-	margin-left:50px;
-	margin-top: 30px;
-}
-.desc1-right ul
-{
-	margin-top: 10px;
-}
-.desc1-right li
-{
-	margin-top: 10px;
-}
-.desc1-right-b
-{
-	display: inline-block;
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 30px;
-
-color: #4F4F4F;
-}
-.desc1-right-b-two
-{
-
-	display: inline-block;
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 28px;
-align-items: center;
-text-align: center;
-
-color: #828282;
-}
-.desc1-right-b-two a
-{
- text-decoration: none;
-	color: #828282;
-}
-.shop-sing {
-	display: inline-block;
-	margin-top: 30px;
-	margin-left: 30px;
-    
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-color: #4F4F4F;
+.OdnaName {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #4F4F4F;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
 
+.desc1-left {
+    float: left;
+}
+
+.desc1-right {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.desc1-right ul {
+    margin-top: 10px;
+}
+
+.desc1-right li {
+    margin-top: 10px;
+}
+
+.desc1-right-b {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    color: #4F4F4F;
+}
+
+.desc1-right-b-two {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    color: #828282;
+}
+
+.desc1-right-b-two a {
+    text-decoration: none;
+    color: #828282;
+}
+
+.shop-sing {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #4F4F4F;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     font-size: 28px;
 }
-.img-game-shots
-{
-	margin-left: 30px;
-	width: 400px;
-	height: 100%;
+
+.img-game-shots {
+    margin-left: 30px;
+    width: 400px;
+    height: 100%;
 }
+
 .shop-sing-opis {
     margin-top: 30px;
-margin-left : 30px;
-padding-right: 30px;
+    margin-left: 30px;
+    padding-right: 30px;
     font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 20px;
-color: #4F4F4F;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: #4F4F4F;
 }
+
+
 /* тут оставить отзыв */
-.single-form-left
-{
 
-}
+.single-form-left {}
+
 h6 {
-	margin-left: 30px;
-     font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 22px;
-line-height: 20px;
-color: #4F4F4F;
+    margin-left: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
 
+.contact-single-comm {
+    padding-bottom: 20px;
+    margin-left: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    color: #4F4F4F;
 }
-.contact-single-comm
-{
-	padding-bottom: 20px;
-	margin-left: 30px;
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 20px;
-color: #4F4F4F;
 
+.feedback-game {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #828282;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
 }
-.feedback-game
-{
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 20px;
-color: #828282;
 
-	margin-top: 20px;
-	margin-left: 30px;
-	width: 150px;
+.media {
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-right: 30px;
 }
-.media
-{
-	margin-top: 30px;
-	margin-left: 30px;
-	padding-right: 30px;
-}
+
+
 /* Change ' +' in order to change the Dropdown symbol */
 
-h h html, body {
+h h html,
+body {
     margin: 0;
-    background: #fff;
+    background: url("/static/images/back.jpg") repeat;
+    background-size: 450px;
     scroll-behavior: smooth;
+    Background-position: top right;
 }
 
 .btn-feed {
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 20px;
-color: #FFFFFF;
-
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
     margin-left: 30px;
     margin-top: 15px;
     width: 173px;
-height: 50px;
-outline: none;
-background: #5C407A;
-border: none;
-border-radius: 10px;
+    height: 50px;
+    outline: none;
+    background: #5C407A;
+    border: none;
+    border-radius: 10px;
 }
-.btn-feed, 
-.btn-feed:active, 
+
+.btn-feed,
+.btn-feed:active,
 .btn-feed:focus {
     outline: none;
 }
 
-.mt-0
-{
-	margin-top: 10px;
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 20px;
-color: #4F4F4F;
+.mt-0 {
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #4F4F4F;
 }
-.mt-2
-{
-	margin-top: 8px;
-	margin-left: 5px;
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 20px;
-color: #4F4F4F;
+
+.mt-2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    height: 110px;
 }
-.review_reply
-{
-	font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 20px;
-color: #4F4F4F;
+
+.review_reply {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #4F4F4F;
 }
+
+
 /*--Здесь Регистрация --*/
+
 .signupblock {
-	position: static;
-	width: 1255px;
-	
-	
-
-	margin-left: auto;
-	margin-right: auto;
-
+    position: static;
+    width: 1255px;
+    margin-left: auto;
+    margin-right: auto;
     background: #333333;
     height: 766px;
-
-
-
-
-	position: static;
-
-	background: #DCDCDC;
-	border-radius: 15px;
-
-	margin-top: 20px;
-	
-    
+    position: static;
+    background: #DCDFE0;
+    border-radius: 15px;
+    margin-top: 20px;
 }
-.signupblock h1
-{
-	position: relative;
+
+.signupblock h1 {
+    position: relative;
     text-align: center;
     color: #333333;
-
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     top: 100px;
 }
-.signupblock p
-{
-	
-	
-	
+
+.signupblock p {
     color: #333333;
-
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    
 }
 
-.signupblock a
-{
-	text-decoration: none;
-	color: #333333;
+.signupblock a {
+    text-decoration: none;
+    color: #333333;
 }
-.signup
-{
-	margin-top: 120px;
-	width: 326px;
-	
-	
 
-	margin-left: auto;
-	margin-right: auto;
-
-}
-.signup input
-{
-	top:30px;
-	margin-top: 10px;
-	margin-left: auto;
+.signup {
+    margin-top: 120px;
+    width: 326px;
+    margin-left: auto;
     margin-right: auto;
-	width: 326px;
-	height: 51px;
-	border-radius: 5px;
-	border:none;
-	outline: none;
-
 }
-.signup label
-{
-	display: none;
 
+.signup input {
+    top: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 326px;
+    height: 51px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
-.signup button
-{
 
-	margin-top: 30px;
+.signup label {
+    display: none;
+}
+
+.signup button {
+    margin-top: 30px;
     color: #fff;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-
-
     width: 326px;
     height: 51px;
     background: #5C407A;
     border-radius: 6px;
 }
+
 input[type="button"],
 input[type="submit"],
 input[type="text"],
@@ -956,87 +882,81 @@ input[type="search"] {
     outline: none;
     outline: #FFFFFF;
     outline-offset: 0;
-    outline:none;
+    outline: none;
 }
-
-
 
 
 /*--Здесь стиль жанра года сверху --*/
-h3 {
 
+h3 {
     margin-top: 13px;
     font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 23px;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
-
--moz-user-select: -moz-none;
--o-user-select: none;
--webkit-user-select: none;
-user-select: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
+
+
 /*--Здесь стиль названий игр под играми --*/
-.item-info-product-name{
+
+.item-info-product-name {
     font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 21px;
-
-margin-top: 10px;
-margin-left: 15px;
-
-color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.item-info-product-name a{
-    
-text-decoration: none;
-color: #333333;
+
+.item-info-product-name a {
+    text-decoration: none;
+    color: #333333;
 }
+
+
 /*--Здесь стиль жанров в главном экране под играми --*/
-.money
-{
-	display: inline;
-	font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 21px;
-margin-left: 15px;
-/* identical to box height */
 
-
-
-color: #727272;
-
-margin-top:1px;
-align-items: center;
+.money {
+    display: inline;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #727272;
+    margin-top: 1px;
+    align-items: center;
 }
+
+
 /*--Здесь стиль звезд в главном экране под играми --*/
-.stars li
-{
-	color: #333333;
-	display: inline-block;
+
+.stars li {
+    color: #333333;
+    display: inline-block;
 }
-.fa
-{
-	color: #333333;
+
+.fa {
+    color: #333333;
 }
-.stars
-{
-	width:85px;
-	margin-top:-28px;
-	float: right; 
-	margin-right: 8px;
-	font-size: 0.9rem;
+
+.stars {
+    width: 85px;
+    font-size: 0.9rem;
 }
+
 h5 {
     font-family: Roboto;
 }
@@ -1044,12 +964,10 @@ h5 {
 ul {
     margin: 0;
     padding: 0;
-
 }
 
 body img {
     border-radius: 6px;
-
     -webkit-border-radius: 4px;
     -o-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -1058,50 +976,42 @@ body img {
 
 .breadcrumb,
 
-
 /*--/header --*/
+
 
 /* header */
 
+
 /* CSS Document */
-
-
 
 .toggle,
 [id^=drop] {
     display: none;
 }
 
+
 /* Giving a background-color to the nav container. */
 
 nav {
-
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
-
 
 
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
 nav:after {
-
     content: "";
     display: table;
     clear: both;
 }
 
+
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
 
 nav ul {
-
     float: right;
     padding: 0;
     margin: 0;
@@ -1109,115 +1019,72 @@ nav ul {
     position: relative;
 }
 
+
 /* Positioning the navigation items inline */
 
 nav ul li {
-
     display: inline-block;
     float: left;
 }
 
+
 /* Styling the links */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Background color change on Hover */
 
-nav .menu li a:hover {
-
-
-    text-shadow: 0px 0px 25px #FFFFFF;
-
-}
-
-
+nav .menu li a:hover {}
 
 .row {
-margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-
-
 
 
 /* Низ */
 
 
-
-
-
-
-
-
 /* Жанры */
-
-
-
 
 
 /* Игры на главной */
 
 
-
 /* Жанры год найти */
-.sear-head {
 
-    
-}
+.sear-head {}
 
 .poisksleva {
-
-    position: absolute;
     display: inline-block;
+    float: right;
+    margin-right: 30px;
     margin-top: 30px;
-    margin-left: 646px;
     border: none;
     width: 173px;
-height: 50px;
-
-background: #FFFFFF;
-border-radius: 10px;
-
-
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 23px;
-align-items: center;
-text-align: center;
-
-color: #5C407A;
-
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #5C407A;
 }
 
 .poisksleva:hover {
-
     outline: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
+
 /* Последние */
+
 .deal-leftmk {
     position: relative;
 }
-
 
 .poslednie {
     color: #333333;
@@ -1231,13 +1098,11 @@ color: #5C407A;
 }
 
 .img-deals {
-
     width: 90px;
     height: 120px;
 }
 
 .img-fluid2 {
-
     left: -18px;
     top: 10px
 }
@@ -1253,79 +1118,56 @@ color: #5C407A;
     font-size: 16px;
 }
 
+
 /* Одна игра */
-
-
-
-
-
-
-
-
-
 
 .ava {
     width: 90px;
     height: 90px;
 }
 
+
 /* Регистрация */
 
 .regwhite {
-	position: static;
-	width: 1255px;
-	
-	
-
-	margin-left: auto;
-	margin-right: auto;
-
+    position: static;
+    width: 1255px;
+    margin-left: auto;
+    margin-right: auto;
     background: #333333;
     height: 766px;
-
-
-
-
-	position: static;
-
-	background: #DCDCDC;
-	border-radius: 15px;
-
-	margin-top: 20px;
-	
-    
+    position: static;
+    background: #DCDFE0;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
 .vhodreal1 {
     position: relative;
     text-align: center;
     color: #333333;
-
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     top: 111px;
 }
+
 .vhodreal0 {
     position: relative;
     text-align: center;
     color: #333333;
-
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     top: 50px;
 }
+
 .vhodreal3 {
     position: relative;
     text-align: center;
     color: #333333;
-
-
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -1338,8 +1180,6 @@ color: #5C407A;
     position: relative;
     text-align: center;
     color: #5C407A;
-
-
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -1358,183 +1198,172 @@ color: #5C407A;
     margin-top: 300px;
     margin-left: auto;
     margin-right: auto;
-
-
     color: #fff;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-
-
     width: 326px;
     height: 51px;
     background: #5C407A;
     border-radius: 6px;
 }
+
 .primaryAction:hover {
     outline: none;
 }
+
 .primaryAction2 {
     position: relative;
     margin-top: 450px;
     margin-left: auto;
     margin-right: auto;
-
-
     color: #fff;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-
-
     width: 326px;
     height: 51px;
     background: #5C407A;
     border-radius: 6px;
 }
+
 .primaryAction2:hover {
     outline: none;
 }
+
 .primaryAction3 {
     position: relative;
     margin-top: 250px;
     margin-left: auto;
     margin-right: auto;
-
-
     color: #fff;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
-
-
     width: 326px;
     height: 51px;
     background: #5C407A;
     border-radius: 6px;
 }
+
 .primaryAction3:hover {
     outline: none;
 }
-.zabil
-{
 
-	position: relative;
-	margin-top: 40px;
-	color:#4F4F4F;
-	font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-}
-.zabil a
-{
-
-	text-decoration: none;
-	color:#4F4F4F;
-}
-.nezabil
-{
-	position: relative;
-	text-align: center;
-	top: 275px;
-	color:#4F4F4F;
-	font-family: Roboto;
+.zabil {
+    position: relative;
+    margin-top: 40px;
+    color: #4F4F4F;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;
 }
 
-.knopkanorm
-{
-	position: relative;
-	top:70px;
-	margin-left: auto;
+.zabil a {
+    text-decoration: none;
+    color: #4F4F4F;
+}
+
+.nezabil {
+    position: relative;
+    text-align: center;
+    top: 275px;
+    color: #4F4F4F;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.knopkanorm {
+    position: relative;
+    top: 70px;
+    margin-left: auto;
     margin-right: auto;
-	width: 326px;
-	height: 51px;
-	border-radius: 5px;
-	border:none;
-	outline: none;
+    width: 326px;
+    height: 51px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
-.knopknorm:hover
-{
-	outline: #5C407A;
+
+.knopknorm:hover {
+    outline: #5C407A;
 }
-.knopknorm:active
-{
-	outline: #5C407A;
+
+.knopknorm:active {
+    outline: #5C407A;
 }
-.knopkanorm2
-{
-	position: relative;
-	top:60px;
-	margin-top: -10px;
-	margin-left: auto;
+
+.knopkanorm2 {
+    position: relative;
+    top: 60px;
+    margin-top: -10px;
+    margin-left: auto;
     margin-right: auto;
-	width: 326px;
-	height: 51px;
+    width: 326px;
+    height: 51px;
 }
-.knopknorm2:hover
-{
-	outline: #5C407A;
+
+.knopknorm2:hover {
+    outline: #5C407A;
 }
-.knopknorm2:active
-{
-	outline: #5C407A;
+
+.knopknorm2:active {
+    outline: #5C407A;
 }
+
 
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 
 nav ul ul {
-
-
     display: none;
     position: absolute;
     /* has to be the same number as the "line-height" of "nav a" */
     top: 30px;
     background: #fff;
     padding: 10px;
-
 }
+
 
 /* Display Dropdowns on Hover */
 
 nav ul li:hover>ul {
     display: inherit;
-
 }
+
 
 /* Низ */
 
+
 /* Игрульки главная */
+
+
 /* Fisrt Tier Dropdown */
 
 nav ul ul li {
-
     width: 170px;
     float: none;
     display: list-item;
     position: relative;
-
-
 }
 
 nav ul ul li a {
     color: #333;
     padding: 5px 10px;
     display: block;
-
 }
+
 
 /* Second, Third and more Tiers 
  * We move the 2nd and 3rd etc tier dropdowns to the left
@@ -1546,7 +1375,6 @@ nav ul ul ul li {
     top: -60px;
     /* has to be the same number as the "width" of "nav ul ul li" */
     left: 170px;
-
 }
 
 
@@ -1559,230 +1387,200 @@ li>a:only-child:after {
 
 /* Media Queries
 --------------------------------------------- */
-#real-estates-detail
-{
-	position: static;
-	width: 1255px;
-	
-	border-radius: 15px;
+
+#real-estates-detail {
+    position: static;
+    width: 1255px;
+    border-radius: 15px;
     padding-bottom: 30px;
     margin-bottom: 30px;
     padding: 30px;
-
-	background: #DCDCDC;
-	margin-left: auto;
-	margin-right: auto;
-}
-.panel-heading
-{
-	float: left;
-}
-.profile-photo
-{
-	display: inline-block;
-width: 173px;
-height: 173px;
-
-border-radius: 7px;
-margin: 0;
-overflow: hidden;
-}
-#author
-{
-	margin-left: 30px;
-}
-.panel-body
-{
-	display: inline-block;
-}
-.panel-body h3
-{
-	margin: 0;
-	padding: 0;
-	font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 36px;
-line-height: 42px;
-display: flex;
-align-items: center;
-
-color: #333333;
-
-}
-.panel-body h4
-{
-	margin-top: 30px;
-	margin-bottom: 0;
-	padding: 0;
-	font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 26px;
-line-height: 42px;
-align-items: center;
-
-color: #5C407A;
-
-color: #333333;
-
-}
-.panel-body p
-{
-	margin: 0;
-	padding: 0;
-	font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 26px;
-line-height: 42px;
-align-items: center;
-
-color: #5C407A;
-
-}
-.label-warning
-{
-	font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 26px;
-line-height: 42px;
-align-items: center;
-
-color: #4F4F4F;
+    background: #DCDFE0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.topgame-profile a
-{
-list-style-type: none;
+.panel-heading {
+    float: left;
+}
+
+.profile-photo {
+    display: inline-block;
+    width: 173px;
+    height: 173px;
+    border-radius: 7px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#author {
+    margin-left: 30px;
+}
+
+.panel-body {
+    display: inline-block;
+}
+
+.panel-body h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+.panel-body h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    align-items: center;
+    color: #5C407A;
+    color: #333333;
+}
+
+.panel-body p {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    align-items: center;
+    color: #5C407A;
+}
+
+.label-warning {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    align-items: center;
+    color: #4F4F4F;
+}
+
+.topgame-profile a {
+    list-style-type: none;
     text-decoration: none;
     font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 26px;
-line-height: 42px;
-align-items: center;
-
-color: #4F4F4F;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    align-items: center;
+    color: #4F4F4F;
 }
 
-
-#real-estates-detail-two
-{
-	position: static;
-	width: 1255px;
-	
-	border-radius: 15px;
+#real-estates-detail-two {
+    position: static;
+    width: 1255px;
+    border-radius: 15px;
     padding-bottom: 30px;
     margin-bottom: 30px;
     padding: 30px;
-
-	background: #DCDCDC;
-	margin-left: auto;
-	margin-right: auto;
+    background: #DCDFE0;
+    margin-left: auto;
+    margin-right: auto;
 }
-.history-profile-one
-{
-	margin:0;
-	padding: 0;
-list-style-type: none;
+
+.history-profile-one {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     text-decoration: none;
     font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 20px;
-line-height: 42px;
-align-items: center;
-
-color: #4F4F4F;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 42px;
+    align-items: center;
+    color: #4F4F4F;
 }
-.history-profile-two
-{
-	padding-left: 10px;
-list-style-type: none;
+
+.history-profile-two {
+    padding-left: 10px;
+    list-style-type: none;
     text-decoration: none;
     font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 20px;
-line-height: 42px;
-align-items: center;
-
-color: #4F4F4F;
-}
-.form-control-comment
-{
-	display: block;
-	height: 35px;
-	width: 250px;
-	margin-left: 30px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.form-control-comment input:hover
-{
-	outline: none;
-border: none;
-}
-.contact-single
-{
-	width: 700px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 42px;
+    align-items: center;
+    color: #4F4F4F;
 }
 
-.page-number ul{
-	vertical-align: middle;
+.form-control-comment {
+    display: block;
+    height: 35px;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control-comment input:hover {
+    outline: none;
+    border: none;
+}
+
+.contact-single {
+    width: 700px;
+}
+
+.page-number ul {
+    vertical-align: middle;
     text-align: center;
-margin: 0;
-vertical-align: middle;
-padding: 0;
-
+    margin: 0;
+    vertical-align: middle;
+    padding: 0;
 }
-.page-number li{
-	display: inline-block;
-vertical-align: middle;
-	text-decoration: none;
-	list-style-type: none;
-	align-items: center;
-}
-.pagination__item{
 
-	
-    
+.page-number li {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
 }
-.page-number a{
-	display: grid;
-	align-items: center;
 
-	width: 40px;
+.pagination__item {}
+
+.page-number a {
+    display: grid;
+    align-items: center;
+    width: 40px;
     min-height: 40px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 33px;
-
-	align-items: center;
-	text-decoration: none;
-	list-style-type: none;
-
-	color: #4F4F4F;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    color: #4F4F4F;
 }
-
-
-
-
 
 .page-number a:hover {
-
-
     background: #5C407A;
     border-radius: 22px;
     color: #FFFFFF;
 }
 
 .page-number a:active {
-   background: #5C407A;
+    background: #5C407A;
     border-radius: 22px;
     color: #FFFFFF;
 }
