@@ -31,12 +31,12 @@
 /*--Стиль поиска хэдера --*/
 
 .search-bar-w3layouts-newsletter {
+    vertical-align: top;
     display: inline-block;
     outline: none;
-    margin-top: 30px;
-    vertical-align: text-top;
-    margin-left: 30px;
-    height: 50px;
+    vertical-align: top;
+    margin-right: 30px;
+    margin-top: 19px;
 }
 
 .search-bar-w3layouts-newsletter input {
@@ -44,19 +44,19 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     color: #4F4F4F;
     border: 4px solid #000000;
 }
 
-.search-bar-w3layouts-newsletter :hover {
+.search-bar-w3layouts-newsletter input:hover {
     border: 4px solid #5C407A;
 }
 
 .form-control {
     width: 470px;
-    height: 50px;
+    height: 44px;
     background: #FFFFFF;
     border-radius: 8px;
 }
@@ -165,7 +165,6 @@
     width: 1255px;
     height: 100%;
     position: static;
-    background: #DCDFE0;
     border-radius: 15px;
     margin-top: 20px;
     padding-bottom: 37.5px;
@@ -179,16 +178,17 @@
 /*Здесь ксами игры в квадрате*/
 
 .product-men {
-    -webkit-box-flex: 0;
     display: inline-block;
     margin-left: 37.5px;
     margin-top: 37.5px;
     width: 202.5px;
     height: 345px;
-    background: #F4F2F2;
+    background: #fff;
     border-radius: 15px;
     vertical-align: top;
     position: relative;
+    box-sizing: border-box;
+    border: 1px solid #000000;
 }
 
 .product-shoe-info {}
@@ -198,6 +198,7 @@
     bottom: 0px;
     width: 202.5px;
     padding: 15px;
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
@@ -208,7 +209,7 @@
     margin-top: 14.25px;
     width: 175.5px;
     height: 100%;
-    margin-left: 14.25px;
+    margin-left: 12px;
     border-radius: 6px;
 }
 
@@ -322,18 +323,21 @@
 /*--Начало стиля футера --*/
 
 .footer-top {
+    position: relative;
     width: 1255px;
-    background: #DCDFE0;
+    background: #fff;
     border-radius: 15px;
     padding-bottom: 30px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .col-lg-4 {
     display: inline-block;
-    width: 500px;
+    width: 100%;
 }
 
 h2 a {
@@ -345,44 +349,60 @@ h2 a:visited {
     text-decoration: none !important;
 }
 
-h2 {
-    text-decoration: none;
-    color: #333333;
-    margin-top: 40px;
-    margin-left: 40px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-}
+h2 {}
 
-.Opisanie {
-    color: #828282;
-    margin-left: 40px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-}
-
-.Opisanie-two {
-    color: #828282;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    margin-top: 40px;
+.GameReviewer {
     width: 500px;
+    color: #5C407A;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #5C407A;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .followfooter {
-    font-size: 24px;
-    color: #4F4F4F;
-    margin-top: 30px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    color: #333333;
+    text-decoration: none;
     font-family: Roboto;
-    font-style: bold;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.Opisanie {
+    width: 500px;
+    color: #333333;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.Opisanie-two {
+    color: #727272;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .w3layouts_social_list a {
@@ -391,8 +411,8 @@ h2 {
 
 .w3layouts_social_list span {
     display: inline-block;
-    margin-top: 0px;
-    margin-left: 30px;
+    padding-right: 40px;
+    box-sizing: border-box;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -401,33 +421,41 @@ h2 {
 .w3layouts_social_list li {
     position: relative;
     display: inline-block;
-    left: -35px;
 }
 
 .col-lg-4 ul {
     margin-left: 40px;
 }
 
+.Zagolovok_footer {}
+
 .discord {
-    margin-top: 30px;
-    margin-left: 40px;
+    width: 300px;
 }
 
-.w3layouts-news-letter {}
+.w3layouts-news-letter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+}
 
 .footer-title {
-    color: #4F4F4F;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    color: #333333;
     position: relative;
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
+    font-weight: 400;
+    font-size: 24px;
     line-height: 24px;
-    margin-top: 40px;
 }
 
 .w3layouts-newsletter {
     outline: none;
+    position: relative;
+    width: 300px;
 }
 
 input[type="email"] {
@@ -440,22 +468,24 @@ input[type="email"] {
 .w3layouts-newsletter input {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 14px;
     line-height: 28px;
     align-items: center;
-    color: #4F4F4F;
+    color: #727272;
     width: 300px;
     height: 40px;
     border-radius: 5px;
     outline: inherit !important;
-    ;
+    border: 2px solid #000000;
     outline: 0;
     outline-offset: 0;
     outline: none;
-    border: none;
     box-shadow: inherit !important;
     filter: inherit !important;
+    padding-left: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
 }
 
 .w3layouts-newsletter input:active,
@@ -467,18 +497,26 @@ input[type="email"] {
     filter: inherit !important;
 }
 
+.footer-buttom {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
 .w3layouts-newsletter button {
+    background: none;
+    position: absolute;
+    padding: 0;
     font-size: 18px;
     align-items: center;
     color: #4F4F4F;
     width: 40px;
     height: 40px;
-    margin-left: 10px;
     border-radius: 6px;
     outline: none;
     outline: 0;
     outline: inherit !important;
-    ;
+    right: 0;
     outline: 0;
     outline-offset: 0;
     outline: none;
@@ -487,86 +525,91 @@ input[type="email"] {
     filter: inherit !important;
 }
 
-.razdelifooter {
-    color: #4F4F4F;
-    position: relative;
-    margin-left: 0px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 24px;
-}
-
 .razdeliminifooter {
-    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 .razdeliminifooter a {
-    color: #828282;
+    color: #333333;
     text-decoration: none;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 20px;
     line-height: 20px;
 }
 
 .razdeliminifooter li {
-    margin-top: 6px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
-.contactinfomini {
-    margin-top: 20px;
+.razdeliminifooter li:last-child {
+    padding-bottom: 0px;
 }
+
+.contactinfomini {}
 
 .contactinfomini a {
     text-decoration: none;
     font-size: 20px;
     position: relative;
-    margin-top: 20px;
-    color: #828282;
+    color: #333333;
     font-family: Roboto;
     font-style: normal;
     font-weight: medium;
     line-height: 20px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .contactinfomini p {
-    margin-top: 5px;
+    margin: 0;
+    padding: 0;
 }
 
-.contactinfofooter {
-    color: #4F4F4F;
+.footer-address-inf {
+    padding-bottom: 10px;
+    box-sizing: border-box;
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 24px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
 }
+
+.contactinfofooter {}
 
 .footer-right {
     float: right;
     padding-right: 30px;
 }
 
+.footer-grid_section_w3layouts {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
+
 
 /*  А тут самый низ */
 
 .Jenisei {
-    margin-top: 80px;
-    text-align: center;
-    position: relative;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 232px;
+    height: 160px;
+    background: url("../images/jenisei\ logo.png") 100% 100% no-repeat;
 }
 
 .knopkavverh {
-    background-color: #fff;
-    position: relative;
     height: 50px;
     /* Высота блока */
     width: 50px;
-    top: 240px;
-    right: 120px;
     background: url("../images/vverh.png") 100% 100% no-repeat;
     /* Добавляем фон */
     background-size: cover;
@@ -574,10 +617,23 @@ input[type="email"] {
     display: block;
     border-spacing: 0;
     scroll-behavior: smooth;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .knopkavverh:hover {
     filter: drop-shadow(0px 0px 10px #5C407A);
+}
+
+.footer-buttom__block {
+    display: inline-block;
+    vertical-align: top;
+    width: 335px;
+}
+
+.buttom__super {
+    height: 300px;
 }
 
 
@@ -587,7 +643,7 @@ input[type="email"] {
     width: 1255px;
     height: 100%;
     position: static;
-    background: #DCDFE0;
+    background: #fff;
     border-radius: 15px;
     margin-top: 20px;
     padding-bottom: 37.5px;
@@ -914,10 +970,10 @@ h3 {
 /*--Здесь стиль названий игр под играми --*/
 
 .item-info-product-name {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 21px;
     color: #333333;
     overflow: hidden;
@@ -1078,10 +1134,10 @@ nav .menu li a:hover {}
     -o-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    -moz-transition: 0.3s all;
 }
 
 .sear-head:hover {
-    -moz-transition: 0.5s all;
     outline: none;
     background: #5C407A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1105,10 +1161,10 @@ nav .menu li a:hover {}
     align-items: center;
     text-align: center;
     color: #fff;
+    -moz-transition: 0.3s all;
 }
 
 .poisksleva:hover {
-    -moz-transition: 0.5s all;
     outline: none;
     background: #5C407A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1593,29 +1649,31 @@ li>a:only-child:after {
 .pagination__item {}
 
 .page-number a {
-    display: grid;
+    padding-top: 2px;
+    box-sizing: border-box;
+    display: block;
     align-items: center;
+    text-align: center;
     width: 40px;
     min-height: 40px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
     line-height: 33px;
-    align-items: center;
     text-decoration: none;
     list-style-type: none;
-    color: #4F4F4F;
+    color: #000000;
 }
 
 .page-number a:hover {
-    background: #5C407A;
+    background: #000000;
     border-radius: 22px;
     color: #FFFFFF;
 }
 
 .page-number a:active {
-    background: #5C407A;
+    background: #000000;
     border-radius: 22px;
     color: #FFFFFF;
 }
